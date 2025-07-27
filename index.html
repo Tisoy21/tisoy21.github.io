@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>My Personal Website - Jom</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/favicon.png" rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header id="header" class="header dark-background d-flex flex-column">
+      <i class="header-toggle d-xl-none bi bi-list"></i>
+      <div class="profile-img">
+        <img src="assets/img/favicon.png" alt="" class="img-fluid rounded-circle">
+      </div>
+      <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+        <h2 class="sitename">Welcome, Visitor!</h2>
+      </a>
+      <div class="social-links text-center">
+        <a href="#" class="linkedin"><i class="bi bi-google"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-github"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-youtube"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      </div>
+      <div class="c-color-theme-mode">
+        <div class="tdnn day">
+          <div class="moon sun">
+          </div>
+        </div>
+      </div>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i> Home</a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="#skills"><i class="bi bi-lightbulb navicon"></i> Skills & Interest</a></li>
+          <li><a href="#tools-use"><i class="bi bi-tools navicon"></i> Tools I Used</a></li>
+          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="#services"><i class="bi bi-gear navicon"></i> Services</a></li>
+          <!-- <li><a href="#testimonials"><i class="bi bi-chat navicon"></i> Testimonials</a></li> -->
+          <li><a href="#dev-diary"><i class="bi bi-bookmark navicon"></i> Dev Diary</a></li>
+          <li class="dropdown"><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> <span>Resume</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#affiliation">Affiliation</a></li>
+              <li><a href="#non-technical-skills">Non-Technical Skills</a></li>
+              <li><a href="#personal-qualities">Personal Qualities</a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li> -->
+            </ul>
+          </li>
+          <!-- <li>
+            <a href="#contact"><i class="bi bi-telephone navicon"></i> Contact Me</a>
+          </li> -->
+          <li>
+            <div class="c-call-to-action-container">
+              <div class="container">
+                <svg id="svg" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                  <defs>
+                      <filter id="gooey">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+                        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19  -9" result="highContrastGraphic" />
+                        <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+                      </filter>
+                  </defs>
+                </svg>
+                <a class="btn" href="#contact">
+                  <p class="btn-title">Hire me <i class="bi bi-hand-index-thumb"></i></p>
+                  <span class="bubbles">
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+
+      <!-- Hero Section -->
+      <section id="hero" class="hero section dark-background">
+        <img src="assets/img/hero.gif" alt="" data-aos="fade-in" class="">
+        <div class="container hero-text" data-aos="fade-up" data-aos-delay="100">
+          <h1>Jerome Camacho</h1>
+          <p>I'm <span class="typed" data-typed-items="a Freelancer., a Creator of User-friendly Web Application and Web Sites., a Full-Stack Web Developer., a Web Enthusiast., a Techie.">a Freelancer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        </div>
+      </section>
+      <!-- /Hero Section -->
+
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>About</h2>
+          <p>Experienced building a variety of different web applications and sites. On my free time, just tinkering and browsing the internet, also coding is a hobby for me. Have a big dream and goal to become an expert web developer. Came from simple community yet ready to take challenges and seeking knowledge for a higher self-development. Whether I'm not as good as you think, I'd like to show my ability and knowledge, a professional looking to attract employer, to increase my market value as you need. Innovation is my Passion!</p>
+        </div>
+        <!-- End Section Title -->
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4 justify-content-center">
+            <div class="col-lg-4">
+              <img src="assets/img/graduation.jpg" class="img-fluid c-featured-image" alt="">
+            </div>
+            <div class="col-lg-8 content">
+              <h3 class="py-3">Full-Stack Web Developer.</h3>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Nickname:</strong> <span>Jom / Tisoy</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>21 September 1997</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+639-569304324</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Santa Maria, Bulacan</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Religion:</strong> <span>Roman Catholic</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Civil Status:</strong> <span>Single</span></li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>27</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Graduate certificates & Diploma</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>tisoy2197@gmail.com</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Language:</strong> <span>Tagalog / English</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Nationality:</strong> <span>Filipino</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                  </ul>
+                </div>
+              </div>
+              <p class="py-3">
+                Continuously learning the web development field, keep improving and enhancing my knowledge. My focus is on back-end development with PHP, MySQL also using some framework like WordPress, SilverStripe and Laravel.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About Section -->
+
+      <!-- Stats Section -->
+      <section id="stats" class="stats section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-4 col-md-6">
+              <div class="stats-item">
+                <i class="bi bi-stars"></i>
+                <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Years Experience</strong> <span>years of professional development work</span></p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="stats-item">
+                <i class="bi bi-journal-richtext"></i>
+                <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Projects</strong> <span>successful projects delivered on time</span></p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="stats-item">
+                <i class="bi bi-flag"></i>
+                <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Countries</strong> <span>countries I've worked with</span></p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="stats-item">
+                <i class="bi bi-code"></i>
+                <span data-purecounter-start="0" data-purecounter-end="5000" data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Code Commits</strong> <span>contributions to project repositories</span></p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="stats-item">
+                <i class="bi bi-headset"></i>
+                <span data-purecounter-start="0" data-purecounter-end="8760" data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Hours of Support</strong> <span>hours dedicated to maintenance and client support</span></p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="stats-item">
+                <i class="bi bi-lightbulb"></i>
+                <span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Technologies Mastered</strong> <span>technologies in my development toolkit</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Stats Section -->
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Skills & Interest</h2>
+          <p>I'm constantly expanding my technical toolkit across multiple development disciplines while exploring new frameworks and languages that can help me build more efficient, scalable web solutions.</p>
+        </div>
+        <!-- End Section Title -->
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row skills-content skills-animation">
+            <div class="col-lg-4">
+              <h3>Basic</h3>
+              <div class="progress">
+                <span class="skill"><span>Formatting & Installing Applications</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>Troubleshooting</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>Microsoft Office Applications</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+            </div>
+            <div class="col-md-4">
+              <h3>Front end</h3>
+              <div class="progress">
+                <span class="skill"><span>HTML</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>CSS / SCSS</span> <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>JavaScript</span> <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+            </div>
+            <div class="col-md-4">
+              <h3>Server-side</h3>
+              <div class="progress">
+                <span class="skill"><span>PHP</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>Python</span> <i class="val">50%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>MySQL</span> <i class="val">70%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>Nginx</span> <i class="val">30%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>Apache</span> <i class="val">30%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>Docker</span> <i class="val">50%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>API</span> <i class="val">50%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+            </div>
+          </div>
+          <div class="row skills-content skills-animation">
+            <div class="col-md-4">
+              <h3>Frameworks</h3>
+              <div class="progress">
+                <span class="skill"><span>Jquery</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>Bootstrap</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>Laravel</span> <i class="val">50%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>Django</span> <i class="val">50%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>React JS</span> <i class="val">50%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+            </div>
+            <div class="col-lg-4">
+              <h3>Package Managers</h3>
+              <div class="progress">
+                <span class="skill"><span>PIP</span> <i class="val">50%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>NPM</span> <i class="val">70%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>Composer</span> <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+            </div>
+            <div class="col-lg-4">
+              <h3>CMS</h3>
+              <div class="progress">
+                <span class="skill"><span>Wordpress</span> <i class="val">60%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>SilverStripe</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>SEO</span> <i class="val">50%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+            </div>
+          </div>
+          <div class="row skills-content skills-animation">
+            <div class="col-lg-4">
+              <h3>Web Service</h3>
+              <div class="progress">
+                <span class="skill"><span>Suite Scripting / Suite Talk (NetSuite) Cloud ERP</span> <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>Hubspot</span> <i class="val">50%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+            </div>
+            <div class="col-lg-4">
+              <h3>Version Control</h3>
+              <div class="progress">
+                <span class="skill"><span>Git</span> <i class="val">70%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+            </div>
+            <div class="col-lg-4">
+              <h3>Terminal</h3>
+              <div class="progress">
+                <span class="skill"><span>Vim</span> <i class="val">70%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+            </div>
+          </div>
+        </div>
+      </section><!-- /Skills Section -->
+
+      <!-- Tools I Use -->
+      <section id="tools-use" class="tools-use section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Tools I Used</h2>
+          <p>These are the professional development tools and technologies I've mastered across various platforms to efficiently build, test, and deploy web applications throughout my career.</p>
+        </div>
+        <!-- End Section Title -->
+        <div class="container">
+          <div class="row">
+            <h3>Operating System</h3>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/windows.svg" alt="">
+                <span>Windows</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/linux.svg" alt="">
+                <span>Linux</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/macos.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+           <h3>Code Editors</h3>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/notepad++.svg" alt="">
+                <span>Notepad++</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/sublime.svg" alt="">
+                <span>Sublime Text</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/pycharm.svg" alt="">
+                <span>Pycharm</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/vscode.svg" alt="">
+                <span>Visual Studio Code</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/cursor.svg" alt="">
+                <span>Cursor IDE</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <h3>Terminal</h3>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/windows-terminal.svg" alt="">
+                <span>Windows CLI</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/iterm2.svg" alt="">
+                <span>iTerm2</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/vim.svg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/linux-terminal.svg" alt="">
+                <span>Linux Terminal</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/fluent-terminal.svg" alt="">
+                <span>Fluent Terminal</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/git-bash.svg" alt="">
+                <span>Git Bash</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <h3>Database Client/Administration</h3>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/php-myadmin.svg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/mysql-workbench.svg" alt="">
+                <span>Workbench</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/navicat.png" alt="">
+                <span>Navicat Premium</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <h3>Browser</h3>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/firefox.svg" alt="">
+                <span>Mozilla Firefox</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/safari.svg" alt="">
+                <span>Safari</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/google-chrome.svg" alt="">
+                <span>Google Chrome</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/edge.svg" alt="">
+                <span>Microsoft Edge</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <h3>Design</h3>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/photoshop.svg" alt="">
+                <span>Photoshop</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/sketch.svg" alt="">
+                <span>Sketch</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/canva.svg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/figma.svg" alt="">
+                <span>Figma</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <h3>Project Management</h3>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/bitbucket.svg" alt="">
+                <span>Bitbucket</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/github.svg" alt="">
+                <span>Github</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/gitlab.svg" alt="">
+                <span>GitLab</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/trello.svg" alt="">
+                <span>Trello</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/jira.svg" alt="">
+                <span>Jira</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/confluence.svg" alt="">
+                <span>Confluence</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/buddy.svg" alt="">
+                <span>Buddy.works</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/notion.svg" alt="">
+                <span>Notion</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/msoffice.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <h3>Servers</h3>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/filezilla.svg" alt="">
+                <span>FileZilla</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/xampp.svg" alt="">
+                <span>Xampp</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/wampp.svg" alt="">
+                <span>Wampp</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/whm.svg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/cpanel.svg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/digital-ocean.svg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/godaddy.svg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/aws-ec2.svg" alt="">
+                <span>Amazon Ec2</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/docker.svg" alt="">
+                <span>Docker Desktop</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/ploi.svg" alt="">
+                <span>Ploi.io</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/kinsta.svg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/lando.svg" alt="">
+                <span>Lando.dev</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <h3>Services</h3>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/netsuite.svg" alt="">
+                <span>NetSuite</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/php-mailer.svg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/mailhog.svg" alt="">
+                <span>Mailhog</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/mailchimp.svg" alt="">
+                <span>Mailchimp</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/twilio.svg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/hubspot.svg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/postman.svg" alt="">
+                <span>Postman</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/browserstack.svg" alt="">
+                <span>BrowserStack</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/nordvpn.svg" alt="">
+                <span>Nord VPN</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <h3>Communication</h3>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/hipchat.svg" alt="">
+                <span>Hipchat</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/skype.svg" alt="">
+                <span>Skype</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/zoom.svg" alt="">
+                <span>Zoom</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/microsoft-teams.svg" alt="">
+                <span>Microsoft Teams</span>
+              </div>
+            </div>
+            <div class="col-lg-2 wrapper">
+              <div class="c-tools-item">
+                <img src="./assets/img/tools-use/slack.svg" alt="">
+                <span>Slack</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Tools I Use -->
+      
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Portfolio</h2>
+          <p>A showcase of diverse client projects across different industries, demonstrating my ability to develop both informational websites and complex web applications tailored to specific business needs.</p>
+        </div>
+        <!-- End Section Title -->
+        <div class="container">
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-website">Web Site</li>
+              <li data-filter=".filter-webapp">Web App</li>
+              <li data-filter=".filter-workforhire">Work For Hire</li>
+            </ul><!-- End Portfolio Filters -->
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-website">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/silverstonks.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Silver Stonks</h4>
+                    <a href="assets/img/portfolio/web-site/silverstonks.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-app/iclick.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>I-Click Digishop ERP/System</h4>
+                    <a href="assets/img/portfolio/web-app/iclick.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/pulse mvp.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Pulse MVP</h4>
+                    <a href="assets/img/portfolio/web-site/pulse mvp.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-app/minervini.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Minervini</h4>
+                    <a href="assets/img/portfolio/web-app/minervini.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/all4frisco.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>All4 Frisco</h4>
+                    <a href="assets/img/portfolio/web-site/all4frisco.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-webapp">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-app/rmr.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>RMR Bus Travel</h4>
+                    <a href="assets/img/portfolio/web-app/rmr.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/directworksmedia.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Direct Works Media</h4>
+                    <a href="assets/img/portfolio/web-site/directworksmedia.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-webapp">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-app/bernal.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Bernal Medical Surgical Clinic</h4>
+                    <a href="assets/img/portfolio/web-app/bernal.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/realyinvest.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Realy Invest</h4>
+                    <a href="assets/img/portfolio/web-site/realyinvest.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-webapp">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-app/mpjj.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>MPJJ</h4>
+                    <a href="assets/img/portfolio/web-app/mpjj.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/psymetrics.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Psymetrics</h4>
+                    <a href="assets/img/portfolio/web-site/psymetrics.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-webapp">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-app/palawan-travel.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Palawan Travel</h4>
+                    <a href="assets/img/portfolio/web-app/palawan-travel.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/all4prosper.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>All4 Prosper</h4>
+                    <a href="assets/img/portfolio/web-site/all4prosper.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-app/seal-spotter.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Seal Spotter</h4>
+                    <a href="assets/img/portfolio/web-app/seal-spotter.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/avatarbrokers.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Avatar Brokers</h4>
+                    <a href="assets/img/portfolio/web-site/avatarbrokers.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+              
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/vccc.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>VCCC Alliance</h4>
+                    <a href="assets/img/portfolio/web-site/vccc.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/chicago directworksmedia.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Direct Works Media (Chicago)</h4>
+                    <a href="assets/img/portfolio/web-site/chicago directworksmedia.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/all4athletics.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>All4 Athletics</h4>
+                    <a href="assets/img/portfolio/web-site/all4athletics.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/drgeni.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Dr. Geni Abraham</h4>
+                    <a href="assets/img/portfolio/web-site/drgeni.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/checkmark.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Checkmark</h4>
+                    <a href="assets/img/portfolio/web-site/checkmark.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/glutality.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Glutality</h4>
+                    <a href="assets/img/portfolio/web-site/glutality.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/machine-tech.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Machine Tech</h4>
+                    <a href="assets/img/portfolio/web-site/machine-tech.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/optimum.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Optimum</h4>
+                    <a href="assets/img/portfolio/web-site/optimum.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/utopius.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Utopius</h4>
+                    <a href="assets/img/portfolio/web-site/utopius.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/vibe.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Vibe Dating</h4>
+                    <a href="assets/img/portfolio/web-site/vibe.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/better-job.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Better Job</h4>
+                    <a href="assets/img/portfolio/web-site/better-job.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/r&r.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>R&R</h4>
+                    <a href="assets/img/portfolio/web-site/r&r.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/merrihealth.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>MerriHealth</h4>
+                    <a href="assets/img/portfolio/web-site/merrihealth.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/holstep.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Holstep</h4>
+                    <a href="assets/img/portfolio/web-site/holstep.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-workforhire">
+                <div class="portfolio-content h-100">
+                  <img src="assets/img/portfolio/web-site/smartersolution.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Smarter Solution</h4>
+                    <a href="assets/img/portfolio/web-site/smartersolution.png" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+            </div><!-- End Portfolio Container -->
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Section -->
+
+      <!-- Services Section -->
+      <section id="services" class="services section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Services</h2>
+          <p>I offer a wide range of full stack development services to build, scale, and maintain high-quality websites and applications. My expertise spans both front-end and back-end development, ensuring seamless functionality and user experience. Here's how I can help:</p>
+        </div>
+        <!-- End Section Title -->
+        <div class="container">
+
+          <div class="row gy-4">
+
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon flex-shrink-0"><i class="bi bi-wrench-adjustable"></i></div>
+              <div>
+                <h4 class="title">Custom Website Development</h4>
+                <p class="description">Responsive and dynamic websites using modern technologies. Cross-browser compatibility and mobile-first design.</p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon flex-shrink-0"><i class="bi bi-postage-heart"></i></div>
+              <div>
+                <h4 class="title">Front-End Development</h4>
+                <p class="description">Interactive and visually appealing user interfaces. Optimized for performance and speed.</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon flex-shrink-0"><i class="bi bi-braces"></i></div>
+              <div>
+                <h4 class="title">Back-End Development</h4>
+                <p class="description">Secure server-side development with robust databases. API integration and data protection.</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon flex-shrink-0"><i class="bi bi-cart"></i></div>
+              <div>
+                <h4 class="title">E-Commerce Development</h4>
+                <p class="description">Custom e-commerce platforms or integration with existing solutions. Payment gateway setup and secure transactions.</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <div class="icon flex-shrink-0"><i class="bi bi-building-gear"></i></div>
+              <div>
+                <h4 class="title">CMS Development</a></h4>
+                <p class="description">Custom content management systems like WordPress, SilverStripe, and Drupal. Easy-to-manage solutions for non-technical users.</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+              <div class="icon flex-shrink-0"><i class="bi bi-journal-code"></i></div>
+              <div>
+                <h4 class="title">API Integration</h4>
+                <p class="description">Seamless integration with third-party services via APIs. Custom API development for unique requirements.</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="700">
+              <div class="icon flex-shrink-0"><i class="bi bi-database-check"></i></div>
+              <div>
+                <h4 class="title">Database Design and Management</h4>
+                <p class="description">Efficient and secure database setup and optimization. Handling migrations, backups, and performance tuning.</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="800">
+              <div class="icon flex-shrink-0"><i class="bi bi-hammer"></i></div>
+              <div>
+                <h4 class="title">Maintenance and Support</h4>
+                <p class="description">Ongoing updates, security patches, and troubleshooting. Performance monitoring and optimization.</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="900">
+              <div class="icon flex-shrink-0"><i class="bi bi-tag"></i></div>
+              <div>
+                <h4 class="title">Search Engine Optimization (SEO)</h4>
+                <p class="description">Website optimization for better search engine ranking. On-page SEO, keyword optimization, and analytics setup.</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="1000">
+              <div class="icon flex-shrink-0"><i class="bi bi-lock"></i></div>
+              <div>
+                <h4 class="title">Website Security</h4>
+                <p class="description">Implementing security measures to protect your site. Regular security audits and vulnerability testing.</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="1100">
+              <div class="icon flex-shrink-0"><i class="bi bi-cloud-arrow-up"></i></div>
+              <div>
+                <h4 class="title">Cloud Deployment</h4>
+                <p class="description">Cloud infrastructure setup on AWS, Azure, and Google Cloud. Server management, scalability, and SSL setup.</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="1200">
+              <div class="icon flex-shrink-0"><i class="bi bi-arrow-repeat"></i></div>
+              <div>
+                <h4 class="title">DevOps and Automation</h4>
+                <p class="description">Automating deployment pipelines for faster development. Version control and continuous integration (CI/CD).</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="1300">
+              <div class="icon flex-shrink-0"><i class="bi bi-gear"></i></div>
+              <div>
+                <h4 class="title">Custom Web Application Development</h4>
+                <p class="description">Tailored solutions for project management, CRM, and more. Full-stack web application development.</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="1400">
+              <div class="icon flex-shrink-0"><i class="bi bi-database-up"></i></div>
+              <div>
+                <h4 class="title">Website Migration</h4>
+                <p class="description">Hassle-free migration between platforms with minimal downtime. Database migration and optimization.</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="1500">
+              <div class="icon flex-shrink-0"><i class="bi bi-shield-check"></i></div>
+              <div>
+                <h4 class="title">Accessibility and Compliance</h4>
+                <p class="description">Web accessibility for users with disabilities (WCAG 2.1 compliance). GDPR and CCPA compliance for data privacy.</p>
+              </div>
+            </div><!-- End Service Item -->
+
+          </div>
+
+        </div>
+
+      </section><!-- /Services Section -->
+
+      <!-- Testimonials Section -->
+      <!-- <section id="testimonials" class="testimonials section light-background">f
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Testimonials</h2>
+          <p>Feedback from clients and colleagues who have experienced my work firsthand, providing insights into my professional approach, reliability, and the quality of solutions I deliver.</p>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 1,
+                    "spaceBetween": 40
+                  },
+                  "1200": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 1
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section> -->
+      <!-- /Testimonials Section -->
+
+      <!-- Dev Diary Section-->
+      <section id="dev-diary" class="dev-diary section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Dev Diary</h2>
+          <p>
+            A personal workspace where I experiment with new web technologies and document my learning journey, featuring interactive demos and code snippets from my creative side projects.
+          </p>
+        </div>
+        <!-- End Section Title -->
+        <div class="container">
+          <div id="book" class="flip-book">
+            <!-- Front Cover Spread (left + right pages) -->
+            <div class="page page-cover page-cover-top">
+              <div class="page-content">
+                <div class="cover-background">
+                  <div class="cover-content">
+                    <div class="cover-icon">
+                      <i class="bi bi-journal-code"></i>
+                    </div>
+                    <h2 class="cover-title">Dev Diary</h2>
+                    <p class="cover-subtitle">Learning Journey & Experiments</p>
+                    <div class="cover-author">by Jerome Camacho</div>
+                    <div class="cover-date">2025</div>
+                    <div class="cover-decoration">
+                      <div class="code-snippet">
+                        <span class="code-line">const learning = 'never-ending';</span>
+                        <span class="code-line">const passion = 'web development';</span>
+                        <span class="code-line">console.log('🚀 Building the future');</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="page-footer">Front Cover</div>
+              </div>
+            </div>
+            
+            <div class="page page-cover page-cover-bottom">
+              <div class="page-content">
+                <div class="cover-background">
+                  <div class="cover-content">
+                    <div class="back-cover-content">
+                      <h3 class="back-cover-title">About This Diary</h3>
+                      <div class="back-cover-text">
+                        <p>This is my personal development journal where I document:</p>
+                        <ul class="back-cover-list">
+                          <li> New technologies I'm learning</li>
+                          <li>💡 Creative coding experiments</li>
+                          <li>🔧 Problem-solving approaches</li>
+                          <li>🚀 Project ideas and prototypes</li>
+                          <li>📝 Code snippets and solutions</li>
+                        </ul>
+                        <p class="back-cover-quote">"The best way to learn is to build, experiment, and document."</p>
+                      </div>
+                      <div class="back-cover-footer">
+                        <div class="tech-stack">
+                          <span class="tech-tag">HTML</span>
+                          <span class="tech-tag">CSS</span>
+                          <span class="tech-tag">JavaScript</span>
+                          <span class="tech-tag">React</span>
+                          <span class="tech-tag">Node.js</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="page-footer">Back Cover</div>
+              </div>
+            </div>
+
+            <!-- Content pages (left/right pairs) -->
+            <div class="page --left">
+              <div class="page-content">
+                <div class="page-header">Chapter 1</div>
+                <div class="page-text">
+                  <h3>Welcome to My Learning Journey</h3>
+                  <p>This is where I document my experiments with new web technologies and share code snippets from my creative projects.</p>
+                  <p>Today I learned about PageFlip library and how to create interactive flipbooks.</p>
+                </div>
+                <div class="page-footer">Page 1</div>
+              </div>
+            </div>
+            
+            <div class="page --right">
+              <div class="page-content">
+                <div class="page-header">Chapter 1</div>
+                <div class="page-text">
+                  <h3>JavaScript Experiments</h3>
+                  <p>Exploring modern JavaScript features like ES6 modules, async/await, and the PageFlip library.</p>
+                  <p>This flipbook is created using pure HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="page-footer">Page 2</div>
+              </div>
+            </div>
+
+            <div class="page --left">
+              <div class="page-content">
+                <div class="page-header">Chapter 2</div>
+                <div class="page-text">
+                  <h3>CSS Grid & Flexbox</h3>
+                  <p>Mastering modern CSS layout techniques for responsive design.</p>
+                  <p>Learning how to create complex layouts with CSS Grid and Flexbox.</p>
+                </div>
+                <div class="page-footer">Page 3</div>
+              </div>
+            </div>
+
+            <div class="page --right">
+              <div class="page-content">
+                <div class="page-header">Chapter 2</div>
+                <div class="page-text">
+                  <h3>React Hooks</h3>
+                  <p>Exploring React Hooks like useState and useEffect for state management.</p>
+                  <p>Building functional components with modern React patterns.</p>
+                </div>
+                <div class="page-footer">Page 4</div>
+              </div>
+            </div>
+
+            <div class="page --left">
+              <div class="page-content">
+                <div class="page-header">Chapter 2</div>
+                <div class="page-text">
+                  <h3>React Hooks</h3>
+                  <p>Exploring React Hooks like useState and useEffect for state management.</p>
+                  <p>Building functional components with modern React patterns.</p>
+                </div>
+                <div class="page-footer">Page 5</div>
+              </div>
+            </div>
+
+            <div class="page --left">
+              <div class="page-content">
+                <div class="page-header">Chapter 2</div>
+                <div class="page-text">
+                  <h3>React Hooks</h3>
+                  <p>Exploring React Hooks like useState and useEffect for state management.</p>
+                  <p>Building functional components with modern React patterns.</p>
+                </div>
+                <div class="page-footer">Page 6</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- /Dev Diary Section -->
+
+      <!-- Resume Section -->
+      <section id="resume" class="resume section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Resume</h2>
+          <p>
+            To seek a job and opportunity to upgrade, develop and increase my Experiences, Skills and Personalities.
+          </p>
+          <br>
+          <a href="./assets/reports/my-resume-2025.pdf" class="btn btn-danger" target="_blank" id="download-cv"><i class="bi bi-download"></i>&nbsp;&nbsp;Download CV</a>
+        </div>
+        <!-- End Section Title -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Education Background</h3>
+              <div class="resume-item">
+                <h4>Tertiary/College</h4>
+                <h4>Diploma in Computer Information Technology</h4>
+                <h5>2014 - 2016</h5>
+                <h5 class="company">Asian Summit College</h5>
+                <p><em>4/F PELBEL Bldg. I, 2019 Shaw Blvd., Oranbo, Pasig City, Metro Manila, Philippines</em></p>
+              </div><!-- Edn Resume Item -->
+              <div class="resume-item">
+                <h4>Secondary/High School</h4>
+                <h5>2010 - 2014</h5>
+                <h5 class="company">San Joaquin - Kalawaan High School</h5>
+                <p><em>Lope K. Santos San Joaquin, Pasig City, Metro Manila, Philippines</em></p>
+              </div><!-- Edn Resume Item -->
+              <div class="resume-item">
+                <h4>PRIMARY/Elementary</h4>
+                <h5>2004 - 2010</h5>
+                <h5 class="company">San Joaquin Elementary School</h5>
+                <p><em>Lope K. Santos San Joaquin, Pasig City, Metro Manila, Philippines</em></p>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="resume-title">Professional/Working Experience</h3>
+              <div class="resume-item">
+                <h4>Full-Stack Web Developer</h4>
+                <h5 class="company">Bliss Digital</h5>
+                <h5>September 1, 2021 to Present </h5>
+                <p><em>Remote</em></p>
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Industry:</strong> Software Solutions</li>
+                  <li><i class="bi bi-chevron-right"></i> Developed web marketing websites, web application, and going to deployment</li>
+                  <li><i class="bi bi-chevron-right"></i> Australian Based, Melbourne, Victoria, Australia</li>
+                </ul>
+              </div><!-- Edn Resume Item -->
+              <div class="resume-item">
+                <h4>Web Developer / Software Engineer</h4>
+                <h5 class="company">THINKDWM INC. / DIRECT WORKS MEDIA</h5>
+                <h5>November 6, 2018 to August 30, 2021</h5>
+                <p><em>7c, Tuscan Building, 114 V.A. Rufino St, Legazpi Village, Makati, Metro Manila, Philippines</em></p>
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Industry:</strong> Software Solutions</li>
+                  <li><i class="bi bi-chevron-right"></i> Developed web marketing websites, web application, and going to deployment</li>
+                  <li><i class="bi bi-chevron-right"></i> US Based, Palm Beach Gardens, Florida, United States</li>
+                </ul>
+              </div><!-- Edn Resume Item -->
+              <div class="resume-item">
+                <h4>IT Programmer (PHP Programmer/Web App Developer)</h4>
+                <h5 class="company">I-CLICK DIGISHOP CORPORATION</h5>
+                <h5>May 5, 2016 to October 31, 2018</h5>
+                <p><em>3/F LYH Richsons Building J. Abad Santos Street Brgy, 3 Jose Abad Santos, San Juan, 1500 Metro Manila, Philippines</em></p>
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Industry:</strong> Sales / Marketing</li>
+                  <li><i class="bi bi-chevron-right"></i> Developed and maintained ERP system that have the functionalities of business cycles and sales like 'Sales Order', 'Purchase Order', 'Transfer Order', 'Inventories', 'Invoicing' and 'Reports'. Have the integration on 'Netsuite' using the library php toolkit for netsuite/suite-talk as the web services.</li>
+                </ul>
+              </div><!-- Edn Resume Item -->
+              <div class="resume-item">
+                <h4>Staff</h4>
+                <h5 class="company">SPES (Special Program for Employment Students) - Summer Job</h5>
+                <h5>April 2014 (1 month)</h5>
+                <p><em>Pasig City, Metro Manila, Philippines</em></p>
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Industry:</strong> Nutrition / Public Health Center</li>
+                  <li><i class="bi bi-chevron-right"></i> Assisting and helping the duty of staffs.</li>
+                </ul>
+              </div><!-- Edn Resume Item -->
+            </div>
+          </div>
+        </div>
+      </section><!-- /Resume Section -->
+
+      <!-- Affiliation Section -->
+      <section id="affiliation" class="affiliation section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Affiliation</h2>
+          <p>Religious service roles that shaped my discipline, teamwork, and commitment to community values in my formative years.</p>
+        </div>
+        <!-- End Section Title -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> I'm Sacristan (Altar Server) in my school days.</li>
+                <li><i class="bi bi-chevron-right"></i> Also member of Legion of Mary in my school days in Pasig.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Non-Technical Skills Section -->
+      <section id="non-technical-skills" class="non-technical-skills section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Non-Technical Skills</h2>
+          <p>Creative abilities that complement my technical expertise and bring an artistic perspective to my development work.</p>
+        </div>
+        <!-- End Section Title -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> Drawing</li>
+                  <li><i class="bi bi-chevron-right"></i> Lettering</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Personal Qualities -->
+      <section id="personal-qualities" class="personal-qualities section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Personal Qualities</h2>
+          <p>Core professional attributes that drive my approach to development projects and contribute to successful collaborative outcomes.</p>
+        </div>
+        <!-- End Section Title -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> Self-Starter.</li>
+                <li><i class="bi bi-chevron-right"></i> Motivated Developer System seeks employment as part of dynamic software development team.</li>
+                <li><i class="bi bi-chevron-right"></i> Familiarity with Internet related principles and software release cycles.</li>
+                <li><i class="bi bi-chevron-right"></i> Focuses on writing clean, elegant and efficient script.</li>
+                <li><i class="bi bi-chevron-right"></i> Excellent eyes and hands at finding and correcting errors in code.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section light-background">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>Feel free to contact me for job opportunities, freelance work, or project collaborations. I'm always interested in new challenges and would be happy to discuss how my skills can help bring your ideas to life. I typically respond within 24-48 hours.</p>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="row gy-4">
+
+            <div class="col-lg-5">
+
+              <div class="info-wrap">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h3>Address</h3>
+                    <p> Block 116, Lot 21, Sonoma Residences, Sta. Cruz, Sta. Maria, Bulacan, Philippines, 3022</p>
+                  </div>
+                </div><!-- End Info Item -->
+
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <div>
+                    <h3>Call Me</h3>
+                    <p>+639 56 93043 24</p>
+                  </div>
+                </div><!-- End Info Item -->
+
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h3>Email Me</h3>
+                    <p>tisoy2197@gmail.com</p>
+                  </div>
+                </div><!-- End Info Item -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5473.821163355741!2d120.95570718901887!3d14.837371205406377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ad2d4370458f%3A0x740694d948f52aa4!2sSonoma%20Residences!5e1!3m2!1sen!2sph!4v1747481409623!5m2!1sen!2sph" frameborder="0" style="border:0;width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <label for="name-field" class="pb-2">Your Name</label>
+                    <input type="text" name="name" id="name-field" class="form-control" required="">
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="email-field" class="pb-2">Your Email</label>
+                    <input type="email" class="form-control" name="email" id="email-field" required="">
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="subject-field" class="pb-2">Subject</label>
+                    <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="message-field" class="pb-2">Message</label>
+                    <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                  </div>
+
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                    <button type="submit"><i class="bi bi-send"></i> Send Message</button>
+                  </div>
+
+                </div>
+              </form>
+            </div><!-- End Contact Form -->
+
+          </div>
+
+        </div>
+
+      </section><!-- /Contact Section -->
+
+    </main>
+    
+    <footer id="footer" class="footer position-relative">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>2025 - Current Date</strong> <span> &bullet; All Rights Reserved</span></p>
+        </div>
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Preloader -->
+    <div id="preloader"></div>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/jquery/jquery-3.7.1.min.js"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <!-- Dev Diary JS File -->
+    <script src="assets/js/page-flip.browser.js"></script>
+    <script src="assets/js/dev-diary.js"></script>
+    <!-- Custom JS File -->
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
