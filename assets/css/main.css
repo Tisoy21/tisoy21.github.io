@@ -1604,6 +1604,10 @@ section,
   border-top: solid 1px hsl(35, 55%, 90%);
 }
 
+#dev-diary .page .page-text strong {
+  color: #EB3578;
+}
+
 #dev-diary .page .page-content .page-footer {
   height: 30px;
   border-top: solid 1px hsl(35, 55%, 90%);
