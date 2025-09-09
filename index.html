@@ -52,6 +52,9 @@
           <li><a href="#tools-use"><i class="bi bi-tools navicon"></i> Tools I Used</a></li>
           <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
           <li><a href="#services"><i class="bi bi-gear navicon"></i> Services</a></li>
+          <!-- ********** -->
+          <!-- TO FOLLOW  -->
+          <!-- ********** -->
           <!-- <li><a href="#testimonials"><i class="bi bi-chat navicon"></i> Testimonials</a></li> -->
           <li><a href="#dev-diary"><i class="bi bi-bookmark navicon"></i> Dev Diary</a></li>
           <li class="dropdown"><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> <span>Resume</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -59,20 +62,8 @@
               <li><a href="#affiliation">Affiliation</a></li>
               <li><a href="#non-technical-skills">Non-Technical Skills</a></li>
               <li><a href="#personal-qualities">Personal Qualities</a></li>
-              <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li> -->
             </ul>
           </li>
-          <!-- <li>
-            <a href="#contact"><i class="bi bi-telephone navicon"></i> Contact Me</a>
-          </li> -->
           <li>
             <div class="c-call-to-action-container">
               <div class="container">
@@ -171,8 +162,8 @@
             <div class="col-lg-4 col-md-6">
               <div class="stats-item">
                 <i class="bi bi-stars"></i>
-                <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
-                <p><strong>Years Experience</strong> <span>years of professional development work</span></p>
+                <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong> Years Experience and Counting</strong> <span>years of professional development work</span></p>
               </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -1283,6 +1274,9 @@
       </section>
       <!-- /Services Section -->
 
+      <!-- ********** -->
+      <!-- TO FOLLOW  -->
+      <!-- ********** -->
       <!-- Testimonials Section -->
       <!-- <section id="testimonials" class="testimonials section light-background">f
         <div class="container section-title" data-aos="fade-up">
@@ -1396,8 +1390,8 @@
         <!-- End Section Title -->
         <div class="container">
           <div id="book" class="flip-book">
-            <!-- Front Cover Spread (left + right pages) -->
-            <div class="page page-cover page-cover-top">
+            <!-- Front Cover -->
+            <div class="page page-cover page-cover-top" data-density="hard">
               <div class="page-content">
                 <div class="cover-background">
                   <div class="cover-content">
@@ -1405,9 +1399,10 @@
                       <i class="bi bi-journal-code"></i>
                     </div>
                     <h2 class="cover-title">Dev Diary</h2>
-                    <p class="cover-subtitle">Learning Journey & Experiments</p>
+                    <p class="cover-subtitle">Welcome to My Learning Journey, Experience & Experiments</p>
+                    <p class="cover-author">This is where I document my experiments with new web technologies and share code snippets from my creative projects.</p>
                     <div class="cover-author">by Jerome Camacho</div>
-                    <div class="cover-date">2025</div>
+                    <div class="cover-date">as of 2016</div>
                     <div class="cover-decoration">
                       <div class="code-snippet">
                         <span class="code-line">const learning = 'never-ending';</span>
@@ -1420,8 +1415,76 @@
                 <div class="page-footer">Front Cover</div>
               </div>
             </div>
-            
-            <div class="page page-cover page-cover-bottom">
+            <!-- Content pages (left/right pairs) -->
+
+            <div class="page --left">
+              <div class="page-content">
+                <!-- <div class="page-header">Chapter 1</div> -->
+                <div class="page-text">
+                  <h3>Guard Clause</h3>
+                  <p><strong class="page-caption">Purpose:</strong> Early exit para hindi mag-nest ng malalim.</p>
+                  <code>
+                    function save($user) {
+                      if (!$user->isActive()) return;
+                  
+                      // proceed only if user is active
+                      $user->saveToDatabase();
+                    }
+                  </code>
+                </div>
+                <div class="page-footer">Page 1</div>
+              </div>
+            </div>
+
+            <div class="page --left">
+              <div class="page-content">
+                <!-- <div class="page-header">Chapter 1</div> -->
+                <div class="page-text">
+                  <h3>CSS Grid & Flexbox</h3>
+                  <p>Mastering modern CSS layout techniques for responsive design.</p>
+                  <p>Learning how to create complex layouts with CSS Grid and Flexbox.</p>
+                </div>
+                <div class="page-footer">Page 3</div>
+              </div>
+            </div>
+
+            <div class="page --right">
+              <div class="page-content">
+                <!-- <div class="page-header">Chapter 1</div> -->
+                <div class="page-text">
+                  <h3>React Hooks</h3>
+                  <p>Exploring React Hooks like useState and useEffect for state management.</p>
+                  <p>Building functional components with modern React patterns.</p>
+                </div>
+                <div class="page-footer">Page 4</div>
+              </div>
+            </div>
+
+            <div class="page --left">
+              <div class="page-content">
+                <!-- <div class="page-header">Chapter 1</div> -->
+                <div class="page-text">
+                  <h3>React Hooks</h3>
+                  <p>Exploring React Hooks like useState and useEffect for state management.</p>
+                  <p>Building functional components with modern React patterns.</p>
+                </div>
+                <div class="page-footer">Page 5</div>
+              </div>
+            </div>
+
+            <div class="page --right">
+              <div class="page-content">
+                <!-- <div class="page-header">Chapter 1</div> -->
+                <div class="page-text">
+                  <h3>React Hooks</h3>
+                  <p>Exploring React Hooks like useState and useEffect for state management.</p>
+                  <p>Building functional components with modern React patterns.</p>
+                </div>
+                <div class="page-footer">Page 6</div>
+              </div>
+            </div>
+            <!-- Back Cover -->
+            <div class="page page-cover page-cover-bottom" data-density="hard">
               <div class="page-content">
                 <div class="cover-background">
                   <div class="cover-content">
@@ -1453,80 +1516,6 @@
                 <div class="page-footer">Back Cover</div>
               </div>
             </div>
-
-            <!-- Content pages (left/right pairs) -->
-            <div class="page --left">
-              <div class="page-content">
-                <div class="page-header">Chapter 1</div>
-                <div class="page-text">
-                  <h3>Welcome to My Learning Journey</h3>
-                  <p>This is where I document my experiments with new web technologies and share code snippets from my creative projects.</p>
-                  <p>Today I learned about PageFlip library and how to create interactive flipbooks.</p>
-                </div>
-                <div class="page-footer">Page 1</div>
-              </div>
-            </div>
-            
-            <div class="page --right">
-              <div class="page-content">
-                <div class="page-header">Chapter 1</div>
-                <div class="page-text">
-                  <h3>JavaScript Experiments</h3>
-                  <p>Exploring modern JavaScript features like ES6 modules, async/await, and the PageFlip library.</p>
-                  <p>This flipbook is created using pure HTML, CSS, and JavaScript.</p>
-                </div>
-                <div class="page-footer">Page 2</div>
-              </div>
-            </div>
-
-            <div class="page --left">
-              <div class="page-content">
-                <div class="page-header">Chapter 2</div>
-                <div class="page-text">
-                  <h3>CSS Grid & Flexbox</h3>
-                  <p>Mastering modern CSS layout techniques for responsive design.</p>
-                  <p>Learning how to create complex layouts with CSS Grid and Flexbox.</p>
-                </div>
-                <div class="page-footer">Page 3</div>
-              </div>
-            </div>
-
-            <div class="page --right">
-              <div class="page-content">
-                <div class="page-header">Chapter 2</div>
-                <div class="page-text">
-                  <h3>React Hooks</h3>
-                  <p>Exploring React Hooks like useState and useEffect for state management.</p>
-                  <p>Building functional components with modern React patterns.</p>
-                </div>
-                <div class="page-footer">Page 4</div>
-              </div>
-            </div>
-
-            <div class="page --left">
-              <div class="page-content">
-                <div class="page-header">Chapter 2</div>
-                <div class="page-text">
-                  <h3>React Hooks</h3>
-                  <p>Exploring React Hooks like useState and useEffect for state management.</p>
-                  <p>Building functional components with modern React patterns.</p>
-                </div>
-                <div class="page-footer">Page 5</div>
-              </div>
-            </div>
-
-            <div class="page --left">
-              <div class="page-content">
-                <div class="page-header">Chapter 2</div>
-                <div class="page-text">
-                  <h3>React Hooks</h3>
-                  <p>Exploring React Hooks like useState and useEffect for state management.</p>
-                  <p>Building functional components with modern React patterns.</p>
-                </div>
-                <div class="page-footer">Page 6</div>
-              </div>
-            </div>
-
           </div>
         </div>
       </section>
@@ -1542,6 +1531,8 @@
           </p>
           <br>
           <a href="./assets/reports/my-resume-2025.pdf" class="btn btn-danger" target="_blank" id="download-cv"><i class="bi bi-download"></i>&nbsp;&nbsp;Download CV</a>
+          &nbsp;&nbsp;&nbsp;
+          <a href="./assets/reports/cover-letter-2025.pdf" class="btn btn-danger" target="_blank" id="download-cv"><i class="bi bi-download"></i>&nbsp;&nbsp;Download Cover Letter</a>
         </div>
         <!-- End Section Title -->
         <div class="container">
@@ -1554,13 +1545,13 @@
                 <h5>2014 - 2016</h5>
                 <h5 class="company">Asian Summit College</h5>
                 <p><em>4/F PELBEL Bldg. I, 2019 Shaw Blvd., Oranbo, Pasig City, Metro Manila, Philippines</em></p>
-              </div><!-- Edn Resume Item -->
+              </div><!-- End Resume Item -->
               <div class="resume-item">
                 <h4>Secondary/High School</h4>
                 <h5>2010 - 2014</h5>
                 <h5 class="company">San Joaquin - Kalawaan High School</h5>
                 <p><em>Lope K. Santos San Joaquin, Pasig City, Metro Manila, Philippines</em></p>
-              </div><!-- Edn Resume Item -->
+              </div><!-- End Resume Item -->
               <div class="resume-item">
                 <h4>PRIMARY/Elementary</h4>
                 <h5>2004 - 2010</h5>
@@ -1580,7 +1571,7 @@
                   <li><i class="bi bi-chevron-right"></i> Developed web marketing websites, web application, and going to deployment</li>
                   <li><i class="bi bi-chevron-right"></i> Australian Based, Melbourne, Victoria, Australia</li>
                 </ul>
-              </div><!-- Edn Resume Item -->
+              </div><!-- End Resume Item -->
               <div class="resume-item">
                 <h4>Web Developer / Software Engineer</h4>
                 <h5 class="company">THINKDWM INC. / DIRECT WORKS MEDIA</h5>
@@ -1591,7 +1582,7 @@
                   <li><i class="bi bi-chevron-right"></i> Developed web marketing websites, web application, and going to deployment</li>
                   <li><i class="bi bi-chevron-right"></i> US Based, Palm Beach Gardens, Florida, United States</li>
                 </ul>
-              </div><!-- Edn Resume Item -->
+              </div><!-- End Resume Item -->
               <div class="resume-item">
                 <h4>IT Programmer (PHP Programmer/Web App Developer)</h4>
                 <h5 class="company">I-CLICK DIGISHOP CORPORATION</h5>
@@ -1601,7 +1592,7 @@
                   <li><i class="bi bi-chevron-right"></i> <strong>Industry:</strong> Sales / Marketing</li>
                   <li><i class="bi bi-chevron-right"></i> Developed and maintained ERP system that have the functionalities of business cycles and sales like 'Sales Order', 'Purchase Order', 'Transfer Order', 'Inventories', 'Invoicing' and 'Reports'. Have the integration on 'Netsuite' using the library php toolkit for netsuite/suite-talk as the web services.</li>
                 </ul>
-              </div><!-- Edn Resume Item -->
+              </div><!-- End Resume Item -->
               <div class="resume-item">
                 <h4>Staff</h4>
                 <h5 class="company">SPES (Special Program for Employment Students) - Summer Job</h5>
@@ -1611,7 +1602,7 @@
                   <li><i class="bi bi-chevron-right"></i> <strong>Industry:</strong> Nutrition / Public Health Center</li>
                   <li><i class="bi bi-chevron-right"></i> Assisting and helping the duty of staffs.</li>
                 </ul>
-              </div><!-- Edn Resume Item -->
+              </div><!-- End Resume Item -->
             </div>
           </div>
         </div>
