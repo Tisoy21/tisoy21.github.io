@@ -23,7 +23,7 @@ $(document).ready(function() {
         minHeight: 420,
         maxHeight: 1350,
         maxShadowOpacity: 0.5,
-        showCover: false,  // Change this to true
+        showCover: true,  // Change this to true
         mobileScrollSupport: false
     });
 
