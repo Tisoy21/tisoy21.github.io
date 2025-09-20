@@ -1861,6 +1861,104 @@ section,
     100% { transform: rotate(360deg); }
 }
 
+#dev-diary .page.page-cover.page-cover-bottom .back-cover-title {
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 15px;
+	color: var(--accent-color);
+}
+  
+  #dev-diary .page.page-cover.page-cover-bottom .back-cover-text {
+	color: var(--contrast-color);
+	font-size: 1rem;
+	margin-bottom: 20px;
+}
+  
+  #dev-diary .page.page-cover.page-cover-bottom .back-cover-list {
+	list-style: none;
+	padding: 0;
+	margin: 10px 0 20px 0;
+}
+  
+  #dev-diary .page.page-cover.page-cover-bottom .back-cover-list li {
+	margin-bottom: 6px;
+	font-size: 1rem;
+	color: var(--contrast-color);
+}
+  
+  #dev-diary .page.page-cover.page-cover-bottom .back-cover-quote {
+	font-style: italic;
+	color: var(--accent-color);
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+  
+  #dev-diary .page.page-cover.page-cover-bottom .tech-stack {
+	margin-top: 10px;
+}
+  
+#dev-diary .page.page-cover.page-cover-bottom .tech-tag {
+	display: inline-block;
+	background: var(--accent-color);
+	color: var(--contrast-color);
+	border-radius: 12px;
+	padding: 3px 12px;
+	margin: 0 5px 5px 0;
+	font-size: 0.9rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+  
+/* Code Editor Styling for Dev Diary */
+#dev-diary .page .page-text code {
+	display: block;
+	background: #2D2D2D;
+	color: #F8F8F2;
+	padding: 10px 30px 30px 15px;
+	border-radius: 8px;
+	font-family: 'Courier New', 'Monaco', 'Consolas', monospace;
+	font-size: 14px;
+	line-height: 1.6; /* Increased for better readability */
+	overflow-x: hidden; /* Hide horizontal scroll */
+	border: 1px solid #404040;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+	position: relative;
+	margin:0;
+	white-space: pre-wrap; /* Allow wrapping instead of scrolling */
+	tab-size: 4; /* Sets tab width to 4 spaces */
+}
+  
+/* Syntax highlighting for PHP code */
+#dev-diary .page .page-text code .keyword {
+	color: #66D9EF; /* Light blue for keywords */
+}
+
+#dev-diary .page .page-text code .variable {
+	color: #FD971F; /* Orange for variables */
+}
+
+#dev-diary .page .page-text code .string {
+	color: #E6DB74; /* Yellow for strings */
+}
+
+#dev-diary .page .page-text code .comment {
+	color: #75715E; /* Muted gray for comments */
+}
+
+#dev-diary .page .page-text code .function {
+	color: #A6E22E; /* Green for function names */
+}
+
+#dev-diary .page .page-text code .operator {
+	color: #F8F8F2; /* White for operators */
+}
+
+/* Add a subtle glow effect */
+#dev-diary .page .page-text code:hover {
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+	transition: box-shadow 0.3s ease;
+}
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
@@ -2086,59 +2184,4 @@ section,
   font-size: 20px;
   margin-right: 8px;
   color: var(--accent-color);
-}
-
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
-
-#dev-diary .page.page-cover.page-cover-bottom .back-cover-title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-  color: var(--accent-color);
-}
-
-#dev-diary .page.page-cover.page-cover-bottom .back-cover-text {
-  color: var(--contrast-color);
-  font-size: 1rem;
-  margin-bottom: 20px;
-}
-
-#dev-diary .page.page-cover.page-cover-bottom .back-cover-list {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 20px 0;
-}
-
-#dev-diary .page.page-cover.page-cover-bottom .back-cover-list li {
-  margin-bottom: 6px;
-  font-size: 1rem;
-  color: var(--contrast-color);
-}
-
-#dev-diary .page.page-cover.page-cover-bottom .back-cover-quote {
-  font-style: italic;
-  color: var(--accent-color);
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-#dev-diary .page.page-cover.page-cover-bottom .tech-stack {
-  margin-top: 10px;
-}
-
-#dev-diary .page.page-cover.page-cover-bottom .tech-tag {
-  display: inline-block;
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  border-radius: 12px;
-  padding: 3px 12px;
-  margin: 0 5px 5px 0;
-  font-size: 0.9rem;
-  font-weight: 600;
-  letter-spacing: 1px;
 }

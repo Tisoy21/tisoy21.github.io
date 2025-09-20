@@ -1403,8 +1403,7 @@
                     </div>
                     <h2 class="cover-title">Dev Diary</h2>
                     <p class="cover-subtitle">Welcome to My Learning Journey, Experience & Experiments</p>
-                    <p class="cover-author">This is where I document my experiments with new web technologies and share code snippets from my creative projects.</p>
-                    <div class="cover-author">by Jerome Camacho</div>
+                    <div class="cover-author"><strong>by Jerome Camacho</strong></div>
                     <div class="cover-date">as of 2016</div>
                     <div class="cover-decoration">
                       <div class="code-snippet">
@@ -1415,27 +1414,46 @@
                     </div>
                   </div>
                 </div>
-                <div class="page-footer">Front Cover</div>
+                <div class="page-footer">&nbsp;</div>
               </div>
             </div>
-            <!-- Content pages (left/right pairs) -->
 
+            <!-- Content pages (left/right pairs) -->
             <div class="page --left">
               <div class="page-content">
                 <div class="page-header">Programming Techniques</div>
                 <div class="page-text">
                   <h3>Guard Clause</h3>
-                  <p><strong class="page-caption">Purpose:</strong> Early exit para hindi mag-nest ng malalim.</p>
-                  <code>
-                    function save($user) {
-                      if (!$user->isActive()) return;
-                  
-                      // proceed only if user is active
-                      $user->saveToDatabase();
-                    }
-                  </code>
+                  <p><strong class="page-caption">Purpose:</strong> Early exit to avoid deep nesting.</p>
+<code>
+	<span class="keyword">function</span> <span class="function">save</span>(<span class="variable">$user</span>)
+	{
+		<span class="keyword">if</span> (!<span class="variable">$user</span><span class="operator">-></span><span class="function">isActive</span>()) <span class="keyword">return</span>;
+	
+		<span class="comment">// proceed only if user is active</span>
+		<span class="variable">$user</span><span class="operator">-></span><span class="function">saveToDatabase</span>();
+	}
+</code>
                 </div>
                 <div class="page-footer">Page 1</div>
+              </div>
+            </div>
+
+            <div class="page --right">
+              <div class="page-content">
+                <div class="page-header">Programming Techniques</div>
+                <div class="page-text">
+                  <h3>DRY (Don't Repeat Yourself)</h3>
+                  <p><strong class="page-caption">Purpose:</strong> Avoid code duplication, promote reuse.</p>
+<code>
+	<span class="keyword">function</span> <span class="function">calculateTax</span>(<span class="variable">$amount</span>)
+	{
+		<span class="keyword">return</span> <span class="variable">$amount</span> <span class="operator">*</span> <span class="variable">0.12</span>;
+	}
+	<span class="comment">// instead of copying the formula multiple times</span>
+</code>
+                </div>
+                <div class="page-footer">Page 2</div>
               </div>
             </div>
 
@@ -1443,9 +1461,17 @@
               <div class="page-content">
                 <div class="page-header">Programming Techniques</div>
                 <div class="page-text">
-                  <h3>CSS Grid & Flexbox</h3>
-                  <p>Mastering modern CSS layout techniques for responsive design.</p>
-                  <p>Learning how to create complex layouts with CSS Grid and Flexbox.</p>
+                  <h3>Single Responsibility Principle (SRP)</h3>
+                  <p><strong class="page-caption">Purpose:</strong> One function or class = one task only.</p>
+<code>
+  <span class="keyword">class</span> <span class="function">User</span> {
+      <span class="keyword">function</span> <span class="function">saveToDatabase</span>() {}
+  }
+
+  <span class="keyword">class</span> <span class="function">EmailService</span> {
+      <span class="keyword">function</span> <span class="function">sendWelcomeEmail</span>() {}
+  }
+</code>
                 </div>
                 <div class="page-footer">Page 3</div>
               </div>
@@ -1453,11 +1479,13 @@
 
             <div class="page --right">
               <div class="page-content">
-                <!-- <div class="page-header">Chapter 1</div> -->
+                <div class="page-header">Programming Techniques</div>
                 <div class="page-text">
-                  <h3>React Hooks</h3>
-                  <p>Exploring React Hooks like useState and useEffect for state management.</p>
-                  <p>Building functional components with modern React patterns.</p>
+                  <h3>Fail Fast</h3>
+                  <p><strong class="page-caption">Purpose:</strong> Throw errors immediately when something is wrong, don't prolong it.</p>
+<code>
+  <span class="keyword">if</span> (!<span class="variable">input</span>) <span class="keyword">throw</span> <span class="keyword">new</span> <span class="function">Error</span>("Input required");
+</code>
                 </div>
                 <div class="page-footer">Page 4</div>
               </div>
@@ -1465,11 +1493,17 @@
 
             <div class="page --left">
               <div class="page-content">
-                <!-- <div class="page-header">Chapter 1</div> -->
+                <div class="page-header">Programming Techniques</div>
                 <div class="page-text">
-                  <h3>React Hooks</h3>
-                  <p>Exploring React Hooks like useState and useEffect for state management.</p>
-                  <p>Building functional components with modern React patterns.</p>
+                  <h3>Early Return / Exit</h3>
+                  <p><strong class="page-caption">Purpose:</strong> Similar to guard clause — return immediately when done or not needed.</p>
+<code>
+  <span class="keyword">function</span> <span class="function">process</span>(<span class="variable">data</span>) {
+    <span class="keyword">if</span> (!<span class="variable">data</span>) <span class="keyword">return</span>;
+
+    <span class="comment">// continue with processing</span>
+  }
+</code>
                 </div>
                 <div class="page-footer">Page 5</div>
               </div>
@@ -1477,13 +1511,310 @@
 
             <div class="page --right">
               <div class="page-content">
-                <!-- <div class="page-header">Chapter 1</div> -->
+                <div class="page-header">Programming Techniques</div>
                 <div class="page-text">
-                  <h3>React Hooks</h3>
-                  <p>Exploring React Hooks like useState and useEffect for state management.</p>
-                  <p>Building functional components with modern React patterns.</p>
+                  <h3>Meaningful Naming</h3>
+                  <p><strong class="page-caption">Purpose:</strong> Code becomes immediately understandable, even without comments.</p>
+                  <p><strong>Bad:</strong></p>
+<code>
+  <span class="keyword">function</span> <span class="function">x</span>(<span class="variable">$a</span>) {}
+</code>
+                  <br>
+                  <p><strong>Good:</strong></p>
+<code>
+  <span class="keyword">function</span> <span class="function">sendInvoice</span>(<span class="variable">$customer</span>) {}
+</code>
                 </div>
                 <div class="page-footer">Page 6</div>
+              </div>
+            </div>
+
+            <div class="page --left">
+              <div class="page-content">
+                <div class="page-header">Programming Techniques</div>
+                <div class="page-text">
+                  <h3>Avoid Deep Nesting</h3>
+                  <p><strong class="page-caption">Purpose:</strong> Easier to read and maintain. Use early returns or continue/break.</p>
+                  <p><strong>Bad:</strong></p>
+<code>
+  <span class="keyword">if</span> (<span class="variable">$a</span>) {
+    <span class="keyword">if</span> (<span class="variable">$b</span>) {
+      <span class="keyword">if</span> (<span class="variable">$c</span>) {
+        <span class="comment">// do something</span>
+      }
+    }
+  }
+</code>
+                  <br>
+                  <p><strong>Good:</strong></p>
+<code>
+  <span class="keyword">if</span> (!<span class="variable">$a</span> || !<span class="variable">$b</span> || !<span class="variable">$c</span>) <span class="keyword">return</span>;
+  <span class="comment">// do something</span>
+</code>
+                </div>
+                <div class="page-footer">Page 7</div>
+              </div>
+            </div>
+
+            <div class="page --right">
+              <div class="page-content">
+                <div class="page-header">Programming Techniques</div>
+                <div class="page-text">
+                  <h3>Immutability (When Possible)</h3>
+                  <p><strong class="page-caption">Purpose:</strong> Avoid side effects, especially in functional programming.</p>
+<code>
+  <span class="keyword">const</span> <span class="variable">updatedList</span> = [<span class="variable">...</span><span class="variable">list</span>, <span class="variable">newItem</span>]; <span class="comment">// instead of modifying original list</span>
+</code>
+                </div>
+                <div class="page-footer">Page 8</div>
+              </div>
+            </div>
+
+            <div class="page --left">
+              <div class="page-content">
+                <div class="page-header">Programming Techniques</div>
+                <div class="page-text">
+                  <h3>Separation of Concerns</h3>
+                  <p><strong class="page-caption">Purpose:</strong> Don't mix logic, UI, and data access in one place.</p>
+                  <ul>
+                    <li>Controller = logic</li>
+                    <li>Model = data access</li>
+                    <li>View = display</li>
+                  </ul>
+                </div>
+                <div class="page-footer">Page 9</div>
+              </div>
+            </div>
+
+            <div class="page --right">
+              <div class="page-content">
+                <div class="page-header">Programming Techniques</div>
+                <div class="page-text">
+                  <h3>Use Constants / Configs Instead of Magic Numbers or Strings</h3>
+                  <p><strong>Bad:</strong></p>
+<code>
+  <span class="keyword">if</span> (<span class="variable">$status</span> == 3) <span class="comment">// what 3 means?</span>
+</code>
+                  <br>
+                  <p><strong>Good:</strong></p>
+<code>
+  <span class="keyword">const</span> <span class="variable">STATUS_APPROVED</span> = 3;
+  <span class="keyword">if</span> (<span class="variable">$status</span> == <span class="variable">STATUS_APPROVED</span>)
+</code>
+                </div>
+                <div class="page-footer">Page 10</div>
+              </div>
+            </div>
+
+            <div class="page --left">
+              <div class="page-content">
+                <div class="page-header">Programming Techniques</div>
+                <div class="page-text">
+                  <h3>Code to Interface (or Abstraction)</h3>
+                  <p><strong class="page-caption">Purpose:</strong> More flexible, easier to replace implementations.</p>
+<code>
+  <span class="keyword">interface</span> <span class="function">Storage</span> {
+      <span class="keyword">public</span> <span class="keyword">function</span> <span class="function">save</span>(<span class="variable">$data</span>);
+  }
+
+  <span class="keyword">class</span> <span class="function">FileStorage</span> <span class="keyword">implements</span> <span class="function">Storage</span> { ... }
+  <span class="keyword">class</span> <span class="function">DBStorage</span> <span class="keyword">implements</span> <span class="function">Storage</span> { ... }
+</code>
+                </div>
+                <div class="page-footer">Page 11</div>
+              </div>
+            </div>
+
+            <div class="page --right">
+              <div class="page-content">
+                <div class="page-header">Programming Techniques</div>
+                <div class="page-text">
+                  <h3>YAGNI (You Aren't Gonna Need It)</h3>
+                  <p><strong class="page-caption">Purpose:</strong> Don't code features that aren't needed yet.</p>
+                  <p><strong>Tip:</strong> Focus on the current need, not on "what's in the future."</p>
+                </div>
+                <div class="page-footer">Page 12</div>
+              </div>
+            </div>
+
+            <div class="page --left">
+              <div class="page-content">
+                <div class="page-header">Programming Techniques</div>
+                <div class="page-text">
+                  <h3>KISS (Keep It Simple, Stupid)</h3>
+                  <p><strong class="page-caption">Purpose:</strong> Don't make it complicated. Simple logic is better.</p>
+                  <p><strong>Bad:</strong></p>
+<code>
+  <span class="keyword">for</span> (<span class="variable">$i</span> = 0; <span class="variable">$i</span> < <span class="function">count</span>(<span class="variable">$arr</span>); <span class="variable">$i</span>++) {
+    <span class="comment">// ...</span>
+  }
+</code>
+                  <br>
+                  <p><strong>Good:</strong></p>
+<code>
+  <span class="keyword">foreach</span> (<span class="variable">$arr</span> <span class="keyword">as</span> <span class="variable">$item</span>) {
+    <span class="comment">// ...</span>
+  }
+</code>
+                </div>
+                <div class="page-footer">Page 13</div>
+              </div>
+            </div>
+
+            <div class="page --right">
+              <div class="page-content">
+                <div class="page-header">Programming Techniques</div>
+                <div class="page-text">
+                  <h3>Use Descriptive Error Handling</h3>
+                  <p><strong class="page-caption">Purpose:</strong> Use descriptive error messages for better debugging.</p>
+                  <p><strong>Bad:</strong></p>
+<code>
+  <span class="keyword">throw</span> <span class="keyword">new</span> <span class="function">Exception</span>("Error");
+</code>
+                  <br>
+                  <p><strong>Good:</strong></p>
+<code>
+  <span class="keyword">throw</span> <span class="keyword">new</span> <span class="function">InvalidArgumentException</span>("User ID must be numeric.");
+</code>                 
+                </div>
+                <div class="page-footer">Page 14</div>
+              </div>
+            </div>
+
+            <div class="page --left">
+              <div class="page-content">
+                <div class="page-header">Programming Techniques</div>
+                <div class="page-text">
+                  <h3>Use Logging Instead of Silent Fails</h3>
+                  <p><strong class="page-caption">Purpose:</strong> Important for debugging production bugs.</p>
+<code>
+  <span class="keyword">if</span> (!<span class="variable">$db</span>-><span class="function">connect</span>()) {
+    <span class="function">error_log</span>("Database connection failed.");
+  }
+</code>
+                </div>
+                <div class="page-footer">Page 15</div>
+              </div>
+            </div>
+
+            <div class="page --right">
+              <div class="page-content">
+                <div class="page-header">Programming Techniques</div>
+                <div class="page-text">
+                  <h3>PSR-1: The Foundation</h3>
+                  <p><strong class="page-caption">Purpose:</strong> Think of PSR-1 as the ABC of PHP coding standards.</p>
+                  <p><strong>Bad:</strong></p>
+<code>
+<span class="keyword">class</span> <span class="function">user_profile</span> {
+    <span class="keyword">function</span> <span class="function">Get_user_name</span>() {
+        <span class="keyword">return</span> "John Doe";
+    }
+}
+</code>
+                  <br>
+                  <p><strong>Good:</strong></p>
+<code>
+<span class="keyword">class</span> <span class="function">UserProfile</span>
+{
+    <span class="keyword">public</span> <span class="keyword">function</span> <span class="function">getUserName</span>()
+    {
+        <span class="keyword">return</span> "John Doe";
+    }
+}
+</code>
+                </div>
+                <div class="page-footer">Page 16</div>
+              </div>
+            </div>
+
+            <div class="page --left">
+              <div class="page-content">
+                <div class="page-header">Programming Techniques</div>
+                <div class="page-text">
+                  <h3>PSR-1: Coding Style Guide</h3>
+                  <p><strong class="page-caption">Purpose:</strong> Think of PSR-1 as the ABC of PHP coding standards.</p>
+                  <p><strong>Bad:</strong></p>
+<code>
+<span class="keyword">class</span> <span class="function">user_profile</span> {
+    <span class="keyword">function</span> <span class="function">Get_user_name</span>() {
+        <span class="keyword">return</span> "John Doe";
+    }
+}
+</code>
+                  <br>
+                  <p><strong>Good:</strong></p>
+<code>
+<span class="keyword">class</span> <span class="function">UserProfile</span>
+{
+    <span class="keyword">public</span> <span class="keyword">function</span> <span class="function">getUserName</span>()
+    {
+        <span class="keyword">return</span> "John Doe";
+    }
+}
+</code>
+                </div>
+                <div class="page-footer">Page 16</div>
+              </div>
+            </div>
+
+            <div class="page --right">
+              <div class="page-content">
+                <div class="page-header">Programming Techniques</div>
+                <div class="page-text">
+                  <h3>PSR-12: The Style Guide</h3>
+                  <p><strong class="page-caption">Purpose:</strong> PSR-12 is like the grammar book of PHP coding.</p>
+<code>
+  <span class="keyword">namespace</span> <span class="function">MyApp\Blog</span>;
+
+  <span class="keyword">class</span> <span class="function">BlogPost</span>
+  {
+      <span class="keyword">private</span> <span class="variable">$title</span>;
+      <span class="keyword">private</span> <span class="variable">$content</span>;
+      
+      <span class="keyword">public</span> <span class="keyword">function</span> <span class="function">__construct</span>(<span class="variable">$title</span>, <span class="variable">$content</span>)
+      {
+          <span class="variable">$this</span><span class="operator">-></span><span class="variable">title</span> = <span class="variable">$title</span>;
+          <span class="variable">$this</span><span class="operator">-></span><span class="variable">content</span> = <span class="variable">$content</span>;
+      }
+      
+      <span class="keyword">public</span> <span class="keyword">function</span> <span class="function">getTitle</span>(): <span class="variable">$string</span>
+      {
+          <span class="keyword">return</span> <span class="variable">$this</span><span class="operator">-></span><span class="variable">title</span>;
+      }
+  }
+</code>
+                </div>
+                <div class="page-footer">Page 17</div>
+              </div>
+            </div>
+
+            <div class="page --left">
+              <div class="page-content">
+                <div class="page-header">Programming Techniques</div>
+                <div class="page-text">
+                  <h3>PSR-4: Autoloading Classes</h3>
+                  <p><strong class="page-caption">Purpose:</strong> Imagine organizing your closet — PSR-4 helps you organize your PHP files similarly.</p>
+<code>
+  <span class="keyword">src/</span>
+  ├── <span class="keyword">Blog/</span>
+  │   ├── <span class="variable">Post.php</span>
+  │   └── <span class="variable">Comment.php</span>
+  └── <span class="keyword">User/</span>
+      └── <span class="variable">Authentication.php</span>
+</code>
+<br>
+<code>
+<span class="comment">// composer.json</span>
+{
+    <span class="keyword">"autoload"</span>: {
+        <span class="keyword">"psr-4"</span>: {
+            <span class="keyword">"MyApp\\"</span>: <span class="keyword">"src/"</span>
+        }
+    }
+}
+</code>
+                </div>
+                <div class="page-footer">Page 18</div>
               </div>
             </div>
             <!-- Back Cover -->
@@ -1509,16 +1840,22 @@
                           <span class="tech-tag">HTML</span>
                           <span class="tech-tag">CSS</span>
                           <span class="tech-tag">JavaScript</span>
-                          <span class="tech-tag">React</span>
-                          <span class="tech-tag">Node.js</span>
+                          <span class="tech-tag">Version control</span>
+                          <span class="tech-tag">Server-side</span>
+                          <span class="tech-tag">Database</span>
+                          <span class="tech-tag">Deployment</span>
+                          <span class="tech-tag">Testing</span>
+                          <span class="tech-tag">SEO & Accessibility</span>
+                          <span class="tech-tag">Maintenance & Support</span>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="page-footer">Back Cover</div>
+                <div class="page-footer">&nbsp;</div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
