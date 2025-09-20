@@ -471,19 +471,6 @@ h6 {
   }
 }
 
-@keyframes move5 {
-  0%{
-    transform: translate(0, 0);
-  }
-  99%{
-    transform: translate(0, -65px);
-  }
-  100%{
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-}
-
 @keyframes move7 {
   0%{
     transform: translate(0, 0);
