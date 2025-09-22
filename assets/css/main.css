@@ -2026,6 +2026,10 @@ section,
     margin-top: 15px;
   }
 
+  #dev-diary .page.page-cover .code-snippet {
+    padding: 7px;
+  }
+
   #dev-diary .page .page-text code {
     padding: 5px 15px 15px 7px;
   }
