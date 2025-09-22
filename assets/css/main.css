@@ -2038,6 +2038,53 @@ section,
   }
 }
 
+/* Mobile Book Navigation - Evenly Spaced */
+@media (max-width: 768px) {
+  #dev-diary .book-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+  
+  #dev-diary .book-nav button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 12px 15px;
+    font-size: 14px;
+    min-width: 80px;
+  }
+  
+  #dev-diary .book-nav .page-info {
+    flex: 0 0 auto;
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--heading-color);
+    white-space: nowrap;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  #dev-diary .book-nav {
+    padding: 0 5px;
+  }
+  
+  #dev-diary .book-nav button {
+    padding: 10px 12px;
+    font-size: 12px;
+    margin: 0 3px;
+  }
+  
+  #dev-diary .book-nav .page-info {
+    font-size: 12px;
+    margin: 0 5px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
