@@ -2096,6 +2096,14 @@ section,
     padding: 6px 8px 15px 6px;
   }
 
+  #dev-diary .page .page-text h3 {
+    font-size: 20px;
+  }
+
+  #dev-diary .page .page-text p {
+    margin-bottom: 10px;
+  }
+
   #dev-diary .book-nav {
     padding: 0 5px;
   }
