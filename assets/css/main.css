@@ -871,6 +871,12 @@ section,
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .section-title {
+    padding-bottom: 25px;
+  }
+}
+
 .section-title h2 {
   font-size: 32px;
   font-weight: 700;
@@ -1178,7 +1184,7 @@ section,
   border: 2px solid var(--accent-color);
 }
 
-.resume #download-cv {
+.resume .download-buttons a {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
@@ -1187,8 +1193,38 @@ section,
   border-radius: 50px;
 }
 
-.resume #download-cv:hover {
+.resume .download-buttons a:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+.resume .download-buttons a:first-of-type {
+  margin-right: 15px;
+}
+
+/* Mobile Resume Buttons Fix */
+@media (max-width: 768px) {
+  .resume .download-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .resume .download-buttons .btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  .resume .download-buttons a:first-of-type {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume .download-buttons .btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
 }
 
 /*--------------------------------------------------------------
