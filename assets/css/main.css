@@ -2011,6 +2011,26 @@ section,
   }
 }
 
+@media (max-width: 768px) {
+  #dev-diary .page .page-text code {
+    font-size: 12px;
+    padding: 8px 12px 20px 8px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* Make code blocks scroll horizontally on very small screens */
+  @media (max-width: 480px) {
+    #dev-diary .page .page-text code {
+      overflow-x: auto;
+      white-space: pre;
+      font-size: 11px;
+      padding: 6px 8px 15px 6px;
+    }
+  }
+}
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
