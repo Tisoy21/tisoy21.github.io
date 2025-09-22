@@ -1031,6 +1031,18 @@ section,
   background-color: #fff;
 }
 
+@media (max-width: 1024px) {
+  .about .content {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about .content {
+    padding-left: 0;
+  }
+}
+
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
@@ -1985,8 +1997,7 @@ section,
 	transition: box-shadow 0.3s ease;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   #dev-diary .page.page-cover .cover-background {
     padding: 20px;
   }
@@ -1996,23 +2007,19 @@ section,
   }
 
   #dev-diary .page.page-cover .cover-title {
-    font-size: 2.5rem;
     margin-bottom: 5px;
   }
   
   #dev-diary .page.page-cover .cover-icon {
-    font-size: 3rem;
     margin-bottom: 10px;
 
   }
   
   #dev-diary .page.page-cover .cover-subtitle {
-    font-size: 1rem;
     margin-bottom: 15px;
   }
 
   #dev-diary .page.page-cover .cover-author {
-    font-size: 1rem;
     margin-bottom: 5px;
   }
 
@@ -2026,7 +2033,6 @@ section,
 
   #dev-diary .page.page-cover .code-snippet {
     padding: 7px;
-    font-size:11px;
   }
 
   #dev-diary .page .page-text code {
@@ -2035,7 +2041,6 @@ section,
 
   #dev-diary .page.page-cover.page-cover-bottom .back-cover-title {
     margin-bottom: 7px;
-    font-size: 1.5rem;
   }
   #dev-diary .page.page-cover.page-cover-bottom .back-cover-list {
     margin: 5px 0 10px 0;
@@ -2045,17 +2050,9 @@ section,
   }
   #dev-diary .page.page-cover.page-cover-bottom .back-cover-text {
     margin-bottom: 10px;
-    font-size: 0.8rem;
-  }
-  #dev-diary .page.page-cover.page-cover-bottom .tech-tag {
-    font-size: 0.6rem;
-  }
-  #dev-diary .page.page-cover.page-cover-bottom .back-cover-list li {
-    font-size: 0.8rem;
   }
   
   #dev-diary .page .page-text code {
-    font-size: 12px;
     padding: 8px 12px 20px 8px;
     line-height: 1.4;
     word-wrap: break-word;
@@ -2082,18 +2079,63 @@ section,
   #dev-diary .book-nav .page-info {
     flex: 0 0 auto;
     margin: 0 10px;
-    font-size: 14px;
     font-weight: 600;
     color: var(--heading-color);
     white-space: nowrap;
   }
 }
 
-@media (max-width: 480px) {
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+  #dev-diary .page.page-cover .cover-title {
+    font-size: 2.5rem;
+  }
+  
+  #dev-diary .page.page-cover .cover-icon {
+    font-size: 3rem;
+  }
+  
+  #dev-diary .page.page-cover .cover-subtitle {
+    font-size: 1rem;
+  }
+
+  #dev-diary .page.page-cover .cover-author {
+    font-size: 1rem;
+  }
+
+  #dev-diary .page.page-cover .code-snippet {
+    font-size:11px;
+  }
+
+  #dev-diary .page.page-cover.page-cover-bottom .back-cover-title {
+    font-size: 1.5rem;
+  }
+
+  #dev-diary .page.page-cover.page-cover-bottom .back-cover-text {
+    font-size: 0.8rem;
+  }
+
+  #dev-diary .page.page-cover.page-cover-bottom .tech-tag {
+    font-size: 0.6rem;
+  }
+
+  #dev-diary .page.page-cover.page-cover-bottom .back-cover-list li {
+    font-size: 0.8rem;
+  }
+  
   #dev-diary .page .page-text code {
     white-space: pre-wrap;
     font-size: 9px;
-    padding: 6px 8px 15px 6px;
+    padding: 0 8px 7px 3px;
+  }
+  
+  #dev-diary .book-nav button {
+    font-size: 14px;
+  }
+  
+  #dev-diary .book-nav .page-info {
+    font-size: 14px;
   }
 
   #dev-diary .page .page-text h3 {
@@ -2102,10 +2144,6 @@ section,
 
   #dev-diary .page .page-text p {
     margin-bottom: 10px;
-  }
-
-  #dev-diary .book-nav {
-    padding: 0 5px;
   }
   
   #dev-diary .book-nav button {
@@ -2117,6 +2155,10 @@ section,
   #dev-diary .book-nav .page-info {
     font-size: 12px;
     margin: 0 5px;
+  }
+  
+  #dev-diary .book-nav {
+    padding: 0 5px;
   }
 }
 
