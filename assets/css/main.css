@@ -856,6 +856,13 @@ section,
   overflow: clip;
 }
 
+@media (max-width: 768px) {
+  section,
+  .section {
+    padding: 30px 20px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
