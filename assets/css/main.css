@@ -1951,6 +1951,7 @@ section,
 	margin:0;
 	white-space: pre-wrap; /* Allow wrapping instead of scrolling */
 	tab-size: 4; /* Sets tab width to 4 spaces */
+  margin-bottom: 15px;
 }
   
 /* Syntax highlighting for PHP code */
@@ -2025,6 +2026,7 @@ section,
 
   #dev-diary .page.page-cover .code-snippet {
     padding: 7px;
+    font-size:11px;
   }
 
   #dev-diary .page .page-text code {
@@ -2089,9 +2091,8 @@ section,
 
 @media (max-width: 480px) {
   #dev-diary .page .page-text code {
-    overflow-x: auto;
-    white-space: pre;
-    font-size: 11px;
+    white-space: pre-wrap;
+    font-size: 9px;
     padding: 6px 8px 15px 6px;
   }
 
