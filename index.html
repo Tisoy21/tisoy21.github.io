@@ -1484,7 +1484,7 @@
                   <h3>Fail Fast</h3>
                   <p><strong class="page-caption">Purpose:</strong> Throw errors immediately when something is wrong, don't prolong it.</p>
 <code>
-  <span class="keyword">if</span> (!<span class="variable">input</span>) <span class="keyword">throw</span> <span class="keyword">new</span> <span class="function">Error</span>("Input required");
+  <span class="keyword">if</span> (!<span class="variable">input</span>) <span class="keyword">throw</span> <span class="keyword">new</span> <span class="function">Error</span>(<span class="string">"Input required"</span>);
 </code>
                 </div>
                 <div class="page-footer">Page 4</div>
@@ -1563,7 +1563,7 @@
                   <h3>Immutability (When Possible)</h3>
                   <p><strong class="page-caption">Purpose:</strong> Avoid side effects, especially in functional programming.</p>
 <code>
-  <span class="keyword">const</span> <span class="variable">updatedList</span> = [<span class="variable">...</span><span class="variable">list</span>, <span class="variable">newItem</span>]; <span class="comment">// instead of modifying original list</span>
+  <span class="keyword">const</span> <span class="variable">updatedList</span> = [<span class="variable">...</span><span class="variable">list</span>, <span class="string">newItem</span>]; <span class="comment">// instead of modifying original list</span>
 </code>
                 </div>
                 <div class="page-footer">Page 8</div>
@@ -1593,13 +1593,13 @@
                   <h3>Use Constants / Configs Instead of Magic Numbers or Strings</h3>
                   <p><strong>Bad:</strong></p>
 <code>
-  <span class="keyword">if</span> (<span class="variable">$status</span> == 3) <span class="comment">// what 3 means?</span>
+  <span class="keyword">if</span> (<span class="variable">$status</span> == <span class="string">3</span>) <span class="comment">// what 3 means?</span>
 </code>
                   <br>
                   <p><strong>Good:</strong></p>
 <code>
-  <span class="keyword">const</span> <span class="variable">STATUS_APPROVED</span> = 3;
-  <span class="keyword">if</span> (<span class="variable">$status</span> == <span class="variable">STATUS_APPROVED</span>)
+  <span class="keyword">const</span> <span class="string">STATUS_APPROVED</span> = 3;
+  <span class="keyword">if</span> (<span class="variable">$status</span> == <span class="string">STATUS_APPROVED</span>)
 </code>
                 </div>
                 <div class="page-footer">Page 10</div>
@@ -1669,12 +1669,12 @@
                   <p><strong class="page-caption">Purpose:</strong> Use descriptive error messages for better debugging.</p>
                   <p><strong>Bad:</strong></p>
 <code>
-  <span class="keyword">throw</span> <span class="keyword">new</span> <span class="function">Exception</span>("Error");
+  <span class="keyword">throw</span> <span class="keyword">new</span> <span class="function">Exception</span>(<span class="string">"Error"</span>);
 </code>
                   <br>
                   <p><strong>Good:</strong></p>
 <code>
-  <span class="keyword">throw</span> <span class="keyword">new</span> <span class="function">InvalidArgumentException</span>("User ID must be numeric.");
+  <span class="keyword">throw</span> <span class="keyword">new</span> <span class="function">InvalidArgumentException</span>(<span class="string">"User ID must be numeric."</span>);
 </code>                 
                 </div>
                 <div class="page-footer">Page 14</div>
@@ -1689,7 +1689,7 @@
                   <p><strong class="page-caption">Purpose:</strong> Important for debugging production bugs.</p>
 <code>
   <span class="keyword">if</span> (!<span class="variable">$db</span>-><span class="function">connect</span>()) {
-    <span class="function">error_log</span>("Database connection failed.");
+    <span class="function">error_log</span>(<span class="string">"Database connection failed."</span>);
   }
 </code>
                 </div>
@@ -1707,7 +1707,7 @@
 <code>
 <span class="keyword">class</span> <span class="function">user_profile</span> {
     <span class="keyword">function</span> <span class="function">Get_user_name</span>() {
-        <span class="keyword">return</span> "John Doe";
+        <span class="keyword">return</span> <span class="string">"John Doe"</span>;
     }
 }
 </code>
@@ -1718,7 +1718,7 @@
 {
     <span class="keyword">public</span> <span class="keyword">function</span> <span class="function">getUserName</span>()
     {
-        <span class="keyword">return</span> "John Doe";
+        <span class="keyword">return</span> <span class="string">"John Doe"</span>;
     }
 }
 </code>
@@ -1737,7 +1737,7 @@
 <code>
 <span class="keyword">class</span> <span class="function">user_profile</span> {
     <span class="keyword">function</span> <span class="function">Get_user_name</span>() {
-        <span class="keyword">return</span> "John Doe";
+        <span class="keyword">return</span> <span class="string">"John Doe"</span>;
     }
 }
 </code>
@@ -1748,7 +1748,7 @@
 {
     <span class="keyword">public</span> <span class="keyword">function</span> <span class="function">getUserName</span>()
     {
-        <span class="keyword">return</span> "John Doe";
+        <span class="keyword">return</span> <span class="string">"John Doe"</span>;
     }
 }
 </code>
