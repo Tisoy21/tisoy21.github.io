@@ -1196,7 +1196,7 @@ section,
 }
 
 .resume .download-buttons a:first-of-type {
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 @media (max-width: 768px) {
