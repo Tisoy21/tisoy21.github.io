@@ -1988,6 +1988,29 @@ section,
   }
 }
 
+@media (max-width: 768px) {
+  #dev-diary .page.page-cover.page-cover-bottom .back-cover-title {
+    margin-bottom: 7px;
+    font-size: 1.5rem;
+  }
+  #dev-diary .page.page-cover.page-cover-bottom .back-cover-list {
+    margin: 5px 0 10px 0;
+  }
+  #dev-diary .page.page-cover.page-cover-bottom .back-cover-quote {
+    margin-bottom: 10px;
+  }
+  #dev-diary .page.page-cover.page-cover-bottom .back-cover-text {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+  }
+  #dev-diary .page.page-cover.page-cover-bottom .tech-tag {
+    font-size: 0.6rem;
+  }
+  #dev-diary .page.page-cover.page-cover-bottom .back-cover-list li {
+    font-size: 0.8rem;
+  }
+}
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
