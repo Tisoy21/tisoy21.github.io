@@ -278,15 +278,12 @@ h6 {
   background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
 }
 
-
 /* HIRE ME BUTTON */
 .header .c-call-to-action-container .container{
   position: relative;
 }
 
 .header #svg {
-  /* position: absolute; */
-  /* display: block; */
   width: 100%;
   max-height: 50px;
 }
@@ -316,7 +313,6 @@ h6 {
 .header .btn:focus {
   color: #fff;
 }
-
 
 .header .btn-title {
   position: relative;
@@ -536,11 +532,9 @@ h6 {
   }
 }
 
-
 /* Color theme mode */
 .c-color-theme-mode .tdnn {
   margin: 0 auto;
-  /*change size of toggle with font-size*/
   font-size: 13%;
   position: relative;
   height: var(--toggleHeight);
@@ -550,9 +544,11 @@ h6 {
   background: var(--bgColor--night);
   cursor: pointer;
 }
+
 .c-color-theme-mode .day{
   background: #FFBF71;
 }
+
 .c-color-theme-mode .moon {
   position: absolute;
   display: block;
@@ -576,6 +572,7 @@ h6 {
     rgba(255, 255, 255, 0.1) -4em 7em 0 -4.5em,
     rgba(255, 255, 255, 0.1) -1em 10em 0 -4.5em;
 }
+
 .c-color-theme-mode .sun {
   top: 4.5em;
   left: 18em;
@@ -1175,7 +1172,6 @@ section,
 .resume .resume-item h5 {
   font-size: 16px;
   padding: 5px 15px;
-  /* display: inline-block; */
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -1326,7 +1322,6 @@ section,
 .tools-use .c-tools-item{
   animation: fadein 1s;
   background: #fff;
-  /* border-radius: 15px; */
   box-shadow: 0 15px 45px rgba(16, 30, 54, .08);
   padding: 37px 40px 37px 30px;
   position: relative;
@@ -1446,10 +1441,8 @@ section,
 .portfolio .portfolio-content .portfolio-info .preview-link,
 .portfolio .portfolio-content .portfolio-info .details-link {
   position: absolute;
-  /* left: calc(50% - 40px); */
   left: 46%;
   font-size: 26px;
-  /* top: calc(50% - 14px); */
   top: 44%;
   color: #fff;
   transition: 0.3s;
@@ -1631,7 +1624,7 @@ section,
 --------------------------------------------------------------*/
 #dev-diary .flip-book {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
-  display: block; /* Changed from 'none' to 'block' */
+  display: block;
   background-size: cover;
   width: 100%;
   max-width: 800px;
@@ -1929,32 +1922,32 @@ section,
 	color: var(--accent-color);
 }
   
-  #dev-diary .page.page-cover.page-cover-bottom .back-cover-text {
+#dev-diary .page.page-cover.page-cover-bottom .back-cover-text {
 	color: var(--contrast-color);
 	font-size: 1rem;
 	margin-bottom: 20px;
 }
   
-  #dev-diary .page.page-cover.page-cover-bottom .back-cover-list {
+#dev-diary .page.page-cover.page-cover-bottom .back-cover-list {
 	list-style: none;
 	padding: 0;
 	margin: 10px 0 20px 0;
 }
   
-  #dev-diary .page.page-cover.page-cover-bottom .back-cover-list li {
+#dev-diary .page.page-cover.page-cover-bottom .back-cover-list li {
 	margin-bottom: 6px;
 	font-size: 1rem;
 	color: var(--contrast-color);
 }
   
-  #dev-diary .page.page-cover.page-cover-bottom .back-cover-quote {
+#dev-diary .page.page-cover.page-cover-bottom .back-cover-quote {
 	font-style: italic;
 	color: var(--accent-color);
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
   
-  #dev-diary .page.page-cover.page-cover-bottom .tech-stack {
+#dev-diary .page.page-cover.page-cover-bottom .tech-stack {
 	margin-top: 10px;
 }
   
@@ -2066,12 +2059,15 @@ section,
   #dev-diary .page.page-cover.page-cover-bottom .back-cover-title {
     margin-bottom: 7px;
   }
+
   #dev-diary .page.page-cover.page-cover-bottom .back-cover-list {
     margin: 5px 0 10px 0;
   }
+
   #dev-diary .page.page-cover.page-cover-bottom .back-cover-quote {
     margin-bottom: 10px;
   }
+
   #dev-diary .page.page-cover.page-cover-bottom .back-cover-text {
     margin-bottom: 10px;
   }
@@ -2111,7 +2107,6 @@ section,
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-
   #dev-diary .page.page-cover .cover-title {
     font-size: 2.5rem;
   }
