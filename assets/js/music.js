@@ -5,7 +5,7 @@ $(document).ready(function() {
     let autoplayAttempted = false;
     
     // Set audio properties for better compatibility
-    $audio[0].volume = 0.3;
+    $audio[0].volume = 0.05;
     $audio[0].muted = false;
     
     // Attempt to play music
