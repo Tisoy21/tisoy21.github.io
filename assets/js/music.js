@@ -1,14 +1,12 @@
-$(document).ready(function() {
+$(function() {
     const $audio = $('#backgroundMusic');
     let isPlaying = false;
     let hasUserInteracted = false;
     let autoplayAttempted = false;
     
-    // Set audio properties for better compatibility
     $audio[0].volume = 0.05;
     $audio[0].muted = false;
     
-    // Attempt to play music
     function attemptPlay() {
         if (autoplayAttempted) return;
         autoplayAttempted = true;
@@ -21,13 +19,11 @@ $(document).ready(function() {
             }).catch((error) => {
                 console.log('Autoplay blocked:', error);
                 isPlaying = false;
-                // Try again after user interaction
                 $(document).one('click touchstart', tryPlayAgain);
             });
         }
     }
     
-    // Try to play again after user interaction
     function tryPlayAgain() {
         hasUserInteracted = true;
         const playPromise = $audio[0].play();
@@ -42,7 +38,6 @@ $(document).ready(function() {
         }
     }
     
-    // Enable audio after user interaction
     function enableAudio() {
         if (!hasUserInteracted) {
             hasUserInteracted = true;
@@ -50,7 +45,6 @@ $(document).ready(function() {
         }
     }
     
-    // Handle audio events
     $audio.on('play', function() {
         isPlaying = true;
     });
@@ -68,9 +62,7 @@ $(document).ready(function() {
         isPlaying = false;
     });
     
-    // Enable audio on any user interaction
     $(document).on('click touchstart keydown', enableAudio);
     
-    // Try autoplay on page load
     setTimeout(attemptPlay, 500);
 });
