@@ -1019,8 +1019,7 @@ section,
   margin-right: auto;
   margin-left: auto;
   padding: 2px;
-  border-image: linear-gradient(to right, #4f1787 0%, var(--accent-color) 100%)
-    1;
+  border-image: linear-gradient(to right, #4f1787 0%, var(--accent-color) 100%) 1;
   border-radius: 0 0 0 0;
   -moz-border-radius: 0 0 0 0;
   -webkit-border-radius: 0 0 0 0;
