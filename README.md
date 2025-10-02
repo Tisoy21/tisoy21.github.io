@@ -10,7 +10,7 @@ A modern, responsive personal portfolio website showcasing my skills, experience
 
 ## 📽️ Live Demo
 
-**Visit my website:** [https://tisoy21.github.io/](https://tisoy21.github.io/)
+**Visit my website:** [https://tisoy21.github.io](https://tisoy21.github.io)
 
 ## 📋 About
 
