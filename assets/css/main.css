@@ -910,11 +910,11 @@ section,
 }
 
 .hero .hero-text {
-  margin-bottom: 170px;
+  margin: 0;
   text-align: center;
 }
 
-.hero img {
+.hero video {
   position: absolute;
   inset: 0;
   display: block;
