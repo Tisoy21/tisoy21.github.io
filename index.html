@@ -125,7 +125,14 @@
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-4 justify-content-center">
             <div class="col-lg-4">
-              <img src="assets/img/graduation.webp" class="img-fluid c-featured-image" alt="Graduation image" width="640" height="960" loading="lazy" decoding="async">
+              <img src="assets/img/graduation.webp"
+              srcset="assets/img/graduation.webp 1x, assets/img/graduation@2x.webp 2x"
+              class="img-fluid c-featured-image"
+              alt="Graduation image"
+              width="271" height="406"
+              loading="lazy" decoding="async"
+              fetchpriority="high"
+              />
             </div>
             <div class="col-lg-8 content">
               <h3 class="py-3">Full-Stack Web Developer</h3>
