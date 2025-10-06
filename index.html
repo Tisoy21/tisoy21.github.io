@@ -20,14 +20,12 @@
     </noscript>
     <link rel="preload" href="assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2" as="font" type="font/woff2" crossorigin>
     <!-- Vendor CSS Files -->
-    <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css"></noscript>
+    <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css"></noscript>
     <link rel="preload" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css"></noscript>
-    <link rel="preload" href="assets/vendor/aos/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/vendor/aos/aos.css"></noscript>
-    <link rel="preload" href="assets/vendor/glightbox/css/glightbox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css"></noscript>
+    <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+    <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css">
     <!-- Preload Hero Video (LCP optimization) -->
     <link rel="preload" as="video" href="assets/video/hero.webm" fetchpriority="high">
     <!-- Main CSS File -->
@@ -108,8 +106,8 @@
     <main class="main">
       <!-- Hero Section -->
       <section id="hero" class="hero section dark-background">
-        <video autoplay loop muted>
-          <source src="assets/video/hero.webm" type="video/mp4" />
+        <video autoplay loop muted playsinline poster="assets/video/hero-poster.webp">
+          <source src="assets/video/hero.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
         <div class="container hero-text" data-aos="fade-up" data-aos-delay="100">

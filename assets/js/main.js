@@ -41,8 +41,10 @@
    */
   const preloader = document.querySelector("#preloader");
   if (preloader) {
-    window.addEventListener("load", () => {
-      preloader.remove();
+    $(document).ready(function(){
+      window.addEventListener("load", () => {
+        preloader.remove();
+      });
     });
   }
 
