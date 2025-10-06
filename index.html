@@ -18,6 +18,7 @@
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
     </noscript>
+    <link rel="preload" href="assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2" as="font" type="font/woff2" crossorigin>
     <!-- Vendor CSS Files -->
     <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css"></noscript>
@@ -108,7 +109,6 @@
       <section id="hero" class="hero section dark-background">
         <video autoplay loop muted>
           <source src="assets/video/hero.webm" type="video/mp4" />
-          <source src="assets/video/hero.webm" type="video/ogg" />
           Your browser does not support the video tag.
         </video>
         <div class="container hero-text" data-aos="fade-up" data-aos-delay="100">
@@ -126,12 +126,10 @@
           <div class="row gy-4 justify-content-center">
             <div class="col-lg-4">
               <img src="assets/img/graduation.webp"
-              srcset="assets/img/graduation.webp 1x, assets/img/graduation.webp 2x"
               class="img-fluid c-featured-image"
               alt="Graduation image"
               width="271" height="406"
               loading="lazy" decoding="async"
-              fetchpriority="high"
               />
             </div>
             <div class="col-lg-8 content">
