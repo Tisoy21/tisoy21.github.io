@@ -54,5 +54,13 @@ $(function () {
     $("#pageInfo").text(`Page ${e.data + 1} of ${pageFlip.getPageCount()}`);
   });
 
+  pageFlip.on("changeState", function (e) {
+    console.log("State changed to:", e.data);
+  });
+
+  pageFlip.on("changeOrientation", function (e) {
+    console.log("Orientation changed to:", e.data);
+  });
+
   $bookContainer.css("display", "block");
 });
