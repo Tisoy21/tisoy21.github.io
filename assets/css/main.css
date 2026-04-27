@@ -1,7 +1,8 @@
 @font-face {
   font-family: "bootstrap-icons";
-  src: url("../vendor/bootstrap-icons/fonts/bootstrap-icons.woff2") format("woff2"),
-       url("../vendor/bootstrap-icons/fonts/bootstrap-icons.woff") format("woff");
+  src:
+    url("../vendor/bootstrap-icons/fonts/bootstrap-icons.woff2") format("woff2"),
+    url("../vendor/bootstrap-icons/fonts/bootstrap-icons.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,9 +10,10 @@
 
 /* Fonts */
 :root {
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font:
+    "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway", sans-serif;
   --nav-font: "Poppins", sans-serif;
 }
@@ -559,7 +561,8 @@ h6 {
   width: var(--toggleBtnRadius);
   height: var(--toggleBtnRadius);
   background: var(--bgColor--night);
-  box-shadow: 3em 2.5em 0 0em var(--mooncolor) inset,
+  box-shadow:
+    3em 2.5em 0 0em var(--mooncolor) inset,
     rgba(255, 255, 255, 0.1) 0em -7em 0 -4.5em,
     rgba(255, 255, 255, 0.1) 3em 7em 0 -4.5em,
     rgba(255, 255, 255, 0.1) 2em 13em 0 -4em,
@@ -577,9 +580,15 @@ h6 {
   width: 7em;
   height: 7em;
   background: #fff;
-  box-shadow: 3em 3em 0 5em #fff inset, 0 -5em 0 -2.7em #fff,
-    3.5em -3.5em 0 -3em #fff, 5em 0 0 -2.7em #fff, 3.5em 3.5em 0 -3em #fff,
-    0 5em 0 -2.7em #fff, -3.5em 3.5em 0 -3em #fff, -5em 0 0 -2.7em #fff,
+  box-shadow:
+    3em 3em 0 5em #fff inset,
+    0 -5em 0 -2.7em #fff,
+    3.5em -3.5em 0 -3em #fff,
+    5em 0 0 -2.7em #fff,
+    3.5em 3.5em 0 -3em #fff,
+    0 5em 0 -2.7em #fff,
+    -3.5em 3.5em 0 -3em #fff,
+    -5em 0 0 -2.7em #fff,
     -3.5em -3.5em 0 -3em #fff;
 }
 
@@ -1114,20 +1123,20 @@ section,
 }
 
 .skills .progress.is-flex {
-  display:flex;
-  flex-wrap:wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .skills .progress .icon img {
-  width:60px;
-  height:auto;
-  margin-right:10px;
-  max-width:100%;
-  display:block;
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+  max-width: 100%;
+  display: block;
 }
 
-.skills .progress.is-flex .content{
-  flex-grow:1;
+.skills .progress.is-flex .content {
+  flex-grow: 1;
 }
 
 .skills .progress .skill {
@@ -1842,13 +1851,17 @@ section,
 
 /* Enhanced shadow for the cover */
 #dev-diary .page.page-cover.page-cover-top {
-  box-shadow: inset 0px 0 30px 0px rgba(0, 0, 0, 0.3),
-    -2px 0 15px 2px rgba(0, 0, 0, 0.4), 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow:
+    inset 0px 0 30px 0px rgba(0, 0, 0, 0.3),
+    -2px 0 15px 2px rgba(0, 0, 0, 0.4),
+    0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 #dev-diary .page.page-cover.page-cover-bottom {
-  box-shadow: inset 0px 0 30px 0px rgba(0, 0, 0, 0.3),
-    10px 0 15px 0px rgba(0, 0, 0, 0.4), 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow:
+    inset 0px 0 30px 0px rgba(0, 0, 0, 0.3),
+    10px 0 15px 0px rgba(0, 0, 0, 0.4),
+    0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* Additional existing styles for book container */
