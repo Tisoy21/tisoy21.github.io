@@ -1120,19 +1120,53 @@ section,
   display: block;
   background: none;
   border-radius: 0;
+  cursor: pointer;
+  overflow: visible;
+}
+
+.skills .progress .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  min-width: 75px;
+}
+
+.skills .progress .skill span {
+  transition: color 0.3s;
+}
+
+.skills .progress:hover .skill span {
+  color: var(--accent-color);
+}
+
+.skills .progress .val {
+  transition: color 0.3s;
+}
+
+.skills .progress:hover .val {
+  color: var(--accent-color);
 }
 
 .skills .progress.is-flex {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills .progress .icon img {
-  width: 60px;
+  width: 50px;
   height: auto;
-  margin-right: 10px;
+  margin-right: 15px;
   max-width: 100%;
   display: block;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.skills .progress:hover .icon img {
+  transform: scale(1.15) rotate(10deg);
 }
 
 .skills .progress.is-flex .content {
