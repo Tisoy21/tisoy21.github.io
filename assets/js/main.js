@@ -235,4 +235,15 @@
   }
   window.addEventListener("load", navmenuScrollspy);
   document.addEventListener("scroll", navmenuScrollspy);
+
+  // Dog script
+  document.addEventListener("DOMContentLoaded", () => {
+      const img = document.querySelector('.dog-tag img');
+      document.querySelector('#header').addEventListener('mouseenter', () => {
+        if (img) img.src = "./assets/img/dog-wave.gif";
+      });
+      document.querySelector('#header').addEventListener('mouseleave', () => {
+        if (img) img.src = "./assets/img/dog.gif";
+      });
+  });
 })();
