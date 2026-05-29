@@ -245,5 +245,11 @@
     document.querySelector("#header").addEventListener("mouseleave", () => {
       if (img) img.src = "./assets/img/dog.gif";
     });
+    document.querySelector("#header").addEventListener('touchstart', () => {
+      if (img) img.src = "./assets/img/dog-wave.gif";
+    });
+    document.querySelector("#header").addEventListener('touchend', () => {
+      if (img) img.src = "./assets/img/dog.gif";
+    });
   });
 })();
