@@ -41,7 +41,7 @@
    */
   const preloader = document.querySelector("#preloader");
   if (preloader) {
-    $(document).ready(function(){
+    $(document).ready(function () {
       window.addEventListener("load", () => {
         preloader.remove();
       });
@@ -146,7 +146,7 @@
           layoutMode: layout,
           filter: filter,
           sortBy: sort,
-        }
+        },
       );
     });
 
@@ -167,7 +167,7 @@
               aosInit();
             }
           },
-          false
+          false,
         );
       });
   });
@@ -178,7 +178,7 @@
   function initSwiper() {
     document.querySelectorAll(".init-swiper").forEach(function (swiperElement) {
       let config = JSON.parse(
-        swiperElement.querySelector(".swiper-config").innerHTML.trim()
+        swiperElement.querySelector(".swiper-config").innerHTML.trim(),
       );
 
       if (swiperElement.classList.contains("swiper-tab")) {
@@ -238,12 +238,12 @@
 
   // Dog script
   document.addEventListener("DOMContentLoaded", () => {
-      const img = document.querySelector('.dog-tag img');
-      document.querySelector('#header').addEventListener('mouseenter', () => {
-        if (img) img.src = "./assets/img/dog-wave.gif";
-      });
-      document.querySelector('#header').addEventListener('mouseleave', () => {
-        if (img) img.src = "./assets/img/dog.gif";
-      });
+    const img = document.querySelector(".dog-tag img");
+    document.querySelector("#header").addEventListener("mouseenter", () => {
+      if (img) img.src = "./assets/img/dog-wave.gif";
+    });
+    document.querySelector("#header").addEventListener("mouseleave", () => {
+      if (img) img.src = "./assets/img/dog.gif";
+    });
   });
 })();
