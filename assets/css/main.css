@@ -2614,6 +2614,12 @@ to prevent layout issues on larger screens
   .hidden-tablet {
     display: none;
   }
+  .c-call-to-action-container{
+    display: none;
+  }
+  .dog-tag{
+    display: none;
+  }
 }
 /* Mobile */
 @media (max-width: 480px) {
