@@ -620,8 +620,6 @@ h6 {
 .navmenu {
   padding: 0;
   z-index: 9997;
-  max-height: 684px;
-  overflow-y: scroll;
 }
 
 .navmenu ul {
