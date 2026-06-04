@@ -2616,11 +2616,9 @@ to prevent layout issues on larger screens
     display: none;
   }
   .c-call-to-action-container {
-    left: 0;
-  }
-  .navmenu {
-    max-height: 600px;
-    overflow-y: scroll;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 /* Mobile */
@@ -2629,10 +2627,8 @@ to prevent layout issues on larger screens
     display: none;
   }
   .c-call-to-action-container {
-    left: 0;
-  }
-  .navmenu {
-    max-height: 500px;
-    overflow-y: scroll;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
