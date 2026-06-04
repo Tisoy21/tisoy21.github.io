@@ -2632,8 +2632,7 @@ to prevent layout issues on larger screens
   }
   .c-call-to-action-container {
     bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
   }
 }
 /* Mobile */
@@ -2643,7 +2642,6 @@ to prevent layout issues on larger screens
   }
   .c-call-to-action-container {
     bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
   }
 }
