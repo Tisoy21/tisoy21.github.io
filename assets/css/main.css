@@ -280,15 +280,16 @@ h6 {
 }
 
 /* HIRE ME BUTTON */
-.header .c-call-to-action-container .container {
+.c-call-to-action-container .container {
   position: relative;
 }
 
-.header .c-call-to-action-container {
-  position: absolute;
-  bottom: 4%;
-  left: 3%;
-  width: 55%;
+.c-call-to-action-container {
+  position: fixed;
+  bottom: 15px;
+  left: 300px;
+  width: 145px;
+  z-index: 9999;
 }
 
 .header .dog-tag {
@@ -302,12 +303,12 @@ h6 {
   height: 150px;
 }
 
-.header #svg {
+.c-call-to-action-container #svg {
   width: 100%;
   max-height: 120px;
 }
 
-.header .btn {
+.c-call-to-action-container .btn {
   position: relative;
   padding: 5px 10px;
   font-size: 16px;
@@ -321,19 +322,19 @@ h6 {
   justify-content: center;
 }
 
-.header .btn:hover {
+.c-call-to-action-container .btn:hover {
   color: #fff;
 }
 
-.header .btn:active {
+.c-call-to-action-container .btn:active {
   color: #fff;
 }
 
-.header .btn:focus {
+.c-call-to-action-container .btn:focus {
   color: #fff;
 }
 
-.header .btn-title {
+.c-call-to-action-container .btn-title {
   position: relative;
   z-index: 2;
   text-transform: uppercase;
@@ -342,7 +343,7 @@ h6 {
   margin-bottom: 0.5rem;
 }
 
-.header .bubbles {
+.c-call-to-action-container .bubbles {
   position: absolute;
   left: 0;
   top: 0;
@@ -350,7 +351,7 @@ h6 {
   bottom: 0;
 }
 
-.header .bubble {
+.c-call-to-action-container .bubble {
   width: 35px;
   height: 35px;
   position: absolute;
@@ -361,61 +362,61 @@ h6 {
   border-radius: 100%;
 }
 
-.header .bubble:nth-child(1) {
+.c-call-to-action-container .bubble:nth-child(1) {
   left: 80%;
   animation: move1 3s infinite;
   animation-delay: 0.2s;
 }
 
-.header .bubble:nth-child(2) {
+.c-call-to-action-container .bubble:nth-child(2) {
   left: 35%;
   animation: move2 3.04s infinite;
   animation-delay: 0.4s;
 }
 
-.header .bubble:nth-child(3) {
+.c-call-to-action-container .bubble:nth-child(3) {
   left: 45%;
   animation: move3 3.06s infinite;
   animation-delay: 0.6s;
 }
 
-.header .bubble:nth-child(4) {
+.c-call-to-action-container .bubble:nth-child(4) {
   left: 20%;
   animation: move4 3.08s infinite;
   animation-delay: 0.8s;
 }
 
-.header .bubble:nth-child(5) {
+.c-call-to-action-container .bubble:nth-child(5) {
   left: 15%;
   animation: move5 3.1s infinite;
   animation-delay: 1s;
 }
 
-.header .bubble:nth-child(6) {
+.c-call-to-action-container .bubble:nth-child(6) {
   left: 25%;
   animation: move6 3.12s infinite;
   animation-delay: 1.2s;
 }
 
-.header .bubble:nth-child(7) {
+.c-call-to-action-container .bubble:nth-child(7) {
   left: 70%;
   animation: move7 3.14s infinite;
   animation-delay: 1.4s;
 }
 
-.header .bubble:nth-child(8) {
+.c-call-to-action-container .bubble:nth-child(8) {
   left: 60%;
   animation: move8 3.16s infinite;
   animation-delay: 1.6s;
 }
 
-.header .bubble:nth-child(9) {
+.c-call-to-action-container .bubble:nth-child(9) {
   left: 5%;
   animation: move9 3.18s infinite;
   animation-delay: 1.8s;
 }
 
-.header .bubble:nth-child(10) {
+.c-call-to-action-container .bubble:nth-child(10) {
   left: 55%;
   animation: move10 3.2s infinite;
   animation-delay: 2s;
@@ -2614,16 +2615,24 @@ to prevent layout issues on larger screens
   .hidden-tablet {
     display: none;
   }
-  .c-call-to-action-container{
-    display: none;
+  .c-call-to-action-container {
+    left: 0;
   }
-  .dog-tag{
-    display: none;
+  .navmenu {
+    max-height: 600px;
+    overflow-y: scroll;
   }
 }
 /* Mobile */
 @media (max-width: 480px) {
   .hidden-mobile {
     display: none;
+  }
+  .c-call-to-action-container {
+    left: 0;
+  }
+  .navmenu {
+    max-height: 500px;
+    overflow-y: scroll;
   }
 }

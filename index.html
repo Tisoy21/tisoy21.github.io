@@ -180,51 +180,6 @@
           <li>
             <div class="dog-tag"><img src="./assets/img/dog.gif" alt="featured-dog"/></div>
           </li>
-          <li>
-            <div class="c-call-to-action-container">
-              <div class="container">
-                <svg id="svg" xmlns="http://www.w3.org/2000/svg" version="1.1">
-                  <defs>
-                    <filter id="gooey">
-                      <feGaussianBlur
-                        in="SourceGraphic"
-                        stdDeviation="6"
-                        result="blur"
-                      />
-                      <feColorMatrix
-                        in="blur"
-                        type="matrix"
-                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19  -9"
-                        result="highContrastGraphic"
-                      />
-                      <feComposite
-                        in="SourceGraphic"
-                        in2="highContrastGraphic"
-                        operator="atop"
-                      />
-                    </filter>
-                  </defs>
-                </svg>
-                <a class="btn" href="#contact">
-                  <p class="btn-title">
-                    Hire me <i class="bi bi-hand-index-thumb"></i>
-                  </p>
-                  <span class="bubbles">
-                    <span class="bubble"></span>
-                    <span class="bubble"></span>
-                    <span class="bubble"></span>
-                    <span class="bubble"></span>
-                    <span class="bubble"></span>
-                    <span class="bubble"></span>
-                    <span class="bubble"></span>
-                    <span class="bubble"></span>
-                    <span class="bubble"></span>
-                    <span class="bubble"></span>
-                  </span>
-                </a>
-              </div>
-            </div>
-          </li>
         </ul>
       </nav>
     </header>
@@ -3871,6 +3826,50 @@
     ></a>
     <!-- Preloader -->
     <div id="preloader"></div>
+    <!-- Dog UI -->
+    <div class="c-call-to-action-container">
+      <div class="container">
+        <svg id="svg" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <defs>
+            <filter id="gooey">
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="6"
+                result="blur"
+              />
+              <feColorMatrix
+                in="blur"
+                type="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19  -9"
+                result="highContrastGraphic"
+              />
+              <feComposite
+                in="SourceGraphic"
+                in2="highContrastGraphic"
+                operator="atop"
+              />
+            </filter>
+          </defs>
+        </svg>
+        <a class="btn" href="#contact">
+          <p class="btn-title">
+            Hire me <i class="bi bi-hand-index-thumb"></i>
+          </p>
+          <span class="bubbles">
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+          </span>
+        </a>
+      </div>
+    </div>
     <!-- Vendor JS Files -->
     <script
       src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"
