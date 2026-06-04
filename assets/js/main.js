@@ -5,12 +5,11 @@
    * Header toggle
    */
   const headerToggleBtn = document.querySelector(".header-toggle");
+  const hireMeBtn = document.querySelector(".c-call-to-action-container");
 
   function headerToggle() {
     document.querySelector("#header").classList.toggle("header-show");
-    document
-      .querySelector(".c-call-to-action-container")
-      .classList.toggle("d-none");
+    hireMeBtn.classList.toggle("d-none");
     headerToggleBtn.classList.toggle("bi-list");
     headerToggleBtn.classList.toggle("bi-x");
   }
@@ -61,6 +60,9 @@
       window.scrollY > 100
         ? scrollTop.classList.add("active")
         : scrollTop.classList.remove("active");
+      window.scrollY > 100
+        ? hireMeBtn.classList.add("active")
+        : hireMeBtn.classList.remove("active");
     }
   }
   scrollTop.addEventListener("click", (e) => {

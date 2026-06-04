@@ -824,6 +824,20 @@ h6 {
   bottom: 15px;
 }
 
+.c-call-to-action-container {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99999;
+  transition: all 0.4s;
+  bottom: -15px;
+}
+
+.c-call-to-action-container.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 15px;
+}
+
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -2617,7 +2631,7 @@ to prevent layout issues on larger screens
     display: none;
   }
   .c-call-to-action-container {
-    bottom: 15px;
+    bottom: -15px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -2628,7 +2642,7 @@ to prevent layout issues on larger screens
     display: none;
   }
   .c-call-to-action-container {
-    bottom: 15px;
+    bottom: -15px;
     left: 50%;
     transform: translateX(-50%);
   }
