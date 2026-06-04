@@ -9,7 +9,11 @@
 
   function headerToggle() {
     document.querySelector("#header").classList.toggle("header-show");
-    hireMeBtn.classList.toggle("d-none");
+    if (document.querySelector("#header").classList.contains("header-show")) {
+      hireMeBtn.classList.remove("active");
+    } else if (window.scrollY > 100) {
+      hireMeBtn.classList.add("active");
+    }
     headerToggleBtn.classList.toggle("bi-list");
     headerToggleBtn.classList.toggle("bi-x");
   }
