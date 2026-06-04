@@ -8,6 +8,9 @@
 
   function headerToggle() {
     document.querySelector("#header").classList.toggle("header-show");
+    document
+      .querySelector(".c-call-to-action-container")
+      .classList.toggle("d-none");
     headerToggleBtn.classList.toggle("bi-list");
     headerToggleBtn.classList.toggle("bi-x");
   }

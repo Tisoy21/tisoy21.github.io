@@ -282,6 +282,7 @@ h6 {
 /* HIRE ME BUTTON */
 .c-call-to-action-container .container {
   position: relative;
+  cursor: pointer;
 }
 
 .c-call-to-action-container {
