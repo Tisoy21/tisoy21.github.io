@@ -2615,7 +2615,7 @@ section,
   Mobile: 0–480px
   Tablet: 481–768px
   Desktop: 769–1200px
-  Container max-width: 1200px
+  Container max-width: 1200px, margin: 0 auto; padding: 0 16px;
 # Desktop always capped max-width at 1200px
 to prevent layout issues on larger screens
 ------------------------------------------*/
