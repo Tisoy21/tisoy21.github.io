@@ -64,7 +64,7 @@
       window.scrollY > 100
         ? scrollTop.classList.add("active")
         : scrollTop.classList.remove("active");
-      window.scrollY > 100
+      window.scrollY > 100 && !document.querySelector("#header").classList.contains("header-show")
         ? hireMeBtn.classList.add("active")
         : hireMeBtn.classList.remove("active");
     }
