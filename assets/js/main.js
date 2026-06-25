@@ -246,23 +246,30 @@
   document.addEventListener("scroll", navmenuScrollspy);
 
   // Dog script
+  let dogAnimate = [
+    "./assets/img/dog.gif",
+    "./assets/img/dog-hover-1.gif",
+    "./assets/img/dog-hover-2.gif",
+    "./assets/img/dog-hover-3.gif",
+  ];
+
   document.addEventListener("DOMContentLoaded", () => {
     const img = document.querySelector(".dog-tag img");
     document.querySelector("#header").addEventListener("mouseenter", () => {
-      if (img) img.src = "./assets/img/dog-wave.gif";
+      if (img) img.src = dogAnimate[Math.floor(Math.random() * 3) + 1];
     });
     document.querySelector("#header").addEventListener("mouseleave", () => {
-      if (img) img.src = "./assets/img/dog.gif";
+      if (img) img.src = dogAnimate[0];
     });
     document
       .querySelector(".c-call-to-action-container")
       .addEventListener("mouseenter", () => {
-        if (img) img.src = "./assets/img/dog-wave.gif";
+        if (img) img.src = dogAnimate[Math.floor(Math.random() * 3) + 1];
       });
     document
       .querySelector(".c-call-to-action-container")
       .addEventListener("mouseleave", () => {
-        if (img) img.src = "./assets/img/dog.gif";
+        if (img) img.src = dogAnimate[0];
       });
   });
 })();
